@@ -1,0 +1,6 @@
+{
+  "name": "Booking-Level Profitability & Job Costing Engine for Freight Forwarders",
+  "description": "SaaS Freight Forwarding Booking-level Profitability and Job Costing Engine with real-time financial lookup chain calculations, container cost allocation, and multi-tab analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
