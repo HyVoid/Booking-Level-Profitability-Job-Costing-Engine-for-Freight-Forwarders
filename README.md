@@ -7,7 +7,7 @@
 > **No signup. No installation. Free.**
 >
 > 🌐 **Open in Browser** → [here](https://hyvoid.github.io/Booking-Level-Profitability-Job-Costing-Engine-for-Freight-Forwarders/)
-> 📥 **Download Excel** → comming soon
+> 📥 **Download Excel** → coming soon
 >
 > The same analytical workflow is available in browser and Excel formats.
 
