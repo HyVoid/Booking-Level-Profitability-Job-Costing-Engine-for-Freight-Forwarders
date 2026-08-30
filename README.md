@@ -9,7 +9,7 @@
 Try the browser version for free. If you need the Excel version, you can buy it with a 7-day money-back guarantee.
 >
 > 🌐 **Open in Browser** → [here](https://hyvoid.github.io/Booking-Level-Profitability-Job-Costing-Engine-for-Freight-Forwarders/)
-> 📥 **Download Excel** → [purchase link](https://alexhasgreatestuff.gumroad.com/l/uyukd)
+> 📥 **Download Excel** → [purchase link](https://alexhasgreatestuff.gumroad.com/l/uyukd?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=freight-booking-job-costing)
 >
 > The same analytical workflow is available in browser and Excel formats.
 
