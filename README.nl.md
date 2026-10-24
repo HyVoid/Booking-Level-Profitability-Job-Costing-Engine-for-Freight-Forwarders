@@ -12,7 +12,7 @@
 
 Gebruik de interactieve webapplicatie om de workflow van kostentoerekening direct te inspecteren, of download het volledige Excel-spreadsheetsjabloon om uw eigen boekhoudkundige exports te importeren — gedekt door een geld-terug-garantie van 30 dagen zonder vragen.
 
-> 🌐 **Gratis web-app starten** → [Interactieve rekenmachine voor kostentoerekening en winst-en-verliesrekening van zendingen voor expéditeurs](https://hyvoid.github.io/Booking-Level-Profitability-Job-Costing-Engine-for-Freight-Forwarders/)  
+> 🌐 **Gratis web-app starten** → [Interactieve rekenmachine voor kostentoerekening en winst-en-verliesrekening van zendingen voor expéditeurs](https://hyvoid.github.io/freight-forwarder-job-costing-excel/)  
 > 📥 **Het volledige Excel-model ophalen** → [Download het bewerkbare Excel-sjabloon voor kostentoerekening en winstgevendheid van boekingen voor expéditeurs](https://www.theseusworkshop.com/l/uyukd?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=freight-booking-job-costing)  
 >
 > *Zowel de browserversie als het downloadbare Excel-werkboek delen exact dezelfde relationele boekhoudkundige architectuur.*
@@ -43,7 +43,7 @@ Open het controleblad `Setup_Params` om uw basislijn voor vrachtboekhouding vast
 - Koppel uw **transactietypes** (klantomzet, directe kosten van omzet, bank-/overschrijvingskosten, klantdeposito's).
 - Selecteer uw **beleid voor toerekening van gedeelde kosten** voor FCL-zendingen met meerdere containers.
 
-*Actie:* Inspecteer de vooraf geconfigureerde parameterstructuur direct in de [gratis browserdemo voor kostentoerekening](https://hyvoid.github.io/Booking-Level-Profitability-Job-Costing-Engine-for-Freight-Forwarders/).
+*Actie:* Inspecteer de vooraf geconfigureerde parameterstructuur direct in de [gratis browserdemo voor kostentoerekening](https://hyvoid.github.io/freight-forwarder-job-costing-excel/).
 
 ---
 
