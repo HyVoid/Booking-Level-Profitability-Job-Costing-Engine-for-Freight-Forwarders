@@ -1,110 +1,178 @@
 [ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
-# Instrument voor winstgevendheid en kostentoerekening per boeking voor expéditeurs
 
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE) [![Platform](https://img.shields.io/badge/Platform-Browser%20%2B%20Excel-217346.svg)](#) [![Tool Type](https://img.shields.io/badge/Tool%20Type-Decision%20Support-2251FF.svg)](#)
+# Excel-sjabloon voor kostentoerekening bij expéditeurs & Rekenmachine voor winstgevendheid van zendingen (winst-en-verliesrekening op boekingniveau)
+<img width="2880" height="1228" alt="image" src="https://github.com/user-attachments/assets/f89c1a0f-f576-43af-b26a-02bae4a47348" />
 
-**Zie de werkelijke winst van elke boeking in het goederenvervoer — omzet, kosten van omzet, bankkosten, deposito's, winstgevendheid per service en kosten per container — zonder de analyse handmatig opnieuw op te bouwen.**
 
-**Geen registratie. Geen installatie. Gratis in uw browser.**
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE) [![Platform](https://img.shields.io/badge/Platform-Browser%20%2B%20Excel-217346.svg)](#) [![Tool Type](https://img.shields.io/badge/Tool%20Type-Financial%20Spreadsheet%20Model-2251FF.svg)](#)
 
-Probeer de browserversie gratis. Als u de Excel-versie nodig heeft, kunt u die kopen met een geld-terug-garantie van 30 dagen, zonder vragen.
+**Een auditklare Excel-sjabloon voor kostentoerekening bij expéditeurs en een interactieve winst-en-verliesrekenmachine voor zendingen — gebouwd om brutomarge op boekingniveau, FX-omrekeningen tussen meerdere valuta, kostentoerekening van FCL/LCL-containers en winstgevendheid van vrachtkosten te volgen. Reken facturen van klanten (AR), rekeningen van vervoerders (AP), drayage, douaneafhandeling en bankkosten voor overmakingen af in één gestandaardiseerd logistiek financieel model — gratis in uw browser of als ontgrendeld Excel-spreadsheet.**
+
+**Geen registratie. Geen installatie. Gratis te testen in uw browser.**
+
+Gebruik de interactieve webapplicatie om de workflow van kostentoerekening direct te inspecteren, of download het volledige Excel-spreadsheetsjabloon om uw eigen boekhoudkundige exports te importeren — gedekt door een geld-terug-garantie van 30 dagen zonder vragen.
+
+> 🌐 **Gratis web-app starten** → [Interactieve rekenmachine voor kostentoerekening en winst-en-verliesrekening van zendingen voor expéditeurs](https://hyvoid.github.io/Booking-Level-Profitability-Job-Costing-Engine-for-Freight-Forwarders/)  
+> 📥 **Het volledige Excel-model ophalen** → [Download het bewerkbare Excel-sjabloon voor kostentoerekening en winstgevendheid van boekingen voor expéditeurs](https://www.theseusworkshop.com/l/uyukd?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=freight-booking-job-costing)  
 >
-> 🌐 **Openen in de browser** → [hier](https://hyvoid.github.io/Booking-Level-Profitability-Job-Costing-Engine-for-Freight-Forwarders/)
-> 📥 **Excel downloaden** → [aankooplink](https://www.theseusworkshop.com/l/uyukd?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=freight-booking-job-costing)
->
-> Dezelfde analytische workflow is beschikbaar in de indelingen browser en Excel.
+> *Zowel de browserversie als het downloadbare Excel-werkboek delen exact dezelfde relationele boekhoudkundige architectuur.*
 
+---
 
-## Wat u hiermee kunt volgen
+## Wat het u helpt volgen: afbeelding van pijnpunten in het goederenvervoer op oplossingen
 
-* **Omzet vs. kosten van omzet vs. bankkosten per boeking** — zodat winstgevendheid zichtbaar is op niveau van de zending en niet alleen op bedrijfsniveau.
-* **Nettowinst en winstmarge voor elke boeking** — zodat opdrachten met lage marge of verliesdragende opdrachten kunnen worden geïdentificeerd voordat ze verdwijnen in geaggregeerde financiële rapporten.
-* **Winstgevendheid per service of per heffing** — tonend of oceaanvervoer, inspectie, verzekering, documentatie, coördinatie of andere servicelijnen daadwerkelijk bijdragen aan de winst.
-* **Kostenblootstelling op containerniveau** — scheiding van directe containerkosten en gedeelde kosten op boekingniveau wanneer een zending meerdere containers bevat.
-* **Transacties in vreemde valuta omgerekend naar een gemeenschappelijke USD-basis** — zodat omzet- en kostenregels met gemengde valuta consistent kunnen worden vergeleken.
-* **Uitzonderingen op datagezondheid voordat ze de winst-en-verliesrekening vervuilen** — identificatie van ongeldige boekingen, ongeldige servicecodes en ontbrekende wisselkoersen, in plaats van kapotte data stilzwijgend als geldige getallen te behandelen.
+In plaats van te wachten op geaggregeerde maandafsluitingsrapporten van de boekhouding, volgt en lost dit **logistieke spreadsheet voor kostentoerekening** precies de operationele blinde vlekken op die **margeverlies** veroorzaken in oceaan-, lucht- en multimodaal goederenvervoer:
 
-## Snelstartworkflow
+| Te volgen doelmetriek / pijnpunt | De veelvoorkomende blinde vlek in de vrachtboekhouding | Hoe dit model voor kostentoerekening het oplost en volgt |
+| :--- | :--- | :--- |
+| **Winst-en-verliesrekening en brutomarge op boekingniveau** | Winst is alleen zichtbaar op maandelijks bedrijfsniveau, waardoor verlieslatende zendingen en te laag geprijsde handelsroutes verborgen blijven. | Volgt **AR-omzet vs. AP-kosten van omzet vs. bankkosten voor overmakingen** per individuele boeking-ID (B/L- of AWB-niveau) om **nettowinst en marge %** in realtime bloot te leggen. |
+| **Winstgevendheid van heffingscodes en nevenkosten** | De totale omzet van een zending kennen zonder te weten of oceaanvervoer, drayage, douaneafhandeling of demurrage daadwerkelijk geld hebben opgebracht. | Volgt de margebijdrage over granulaire **vrachtdienstcodes** (oceaanvervoer, THC, inspectie bij herkomst, ladingverzekering, documentatie, coördinatie). |
+| **Toerekening van gedeelde kosten bij meerdere containers (FCL)** | Wanneer één master-B/L meerdere containers omvat, worden vaste vergoedingen op boekingniveau gedupliceerd of genegeerd tijdens de analyse op containerniveau. | Scheidt **directe containerkosten** van **gedeelde kosten op boekingniveau** en kent gedeelde vergoedingen automatisch toe over containers via een gecontroleerd beleid. |
+| **Winst/verlies en normalisatie bij meerdere valuta (FX)** | Oceaanvervoerders betalen in USD, agenten bij herkomst in EUR/CNY en klanten factureren in lokale valuta — met inconsistente handmatige wisselkoersen. | Zet alle regels met gemengde valuta (AR/AP) om naar een **gestandaardiseerde USD-basis** via een gecentraliseerde FX-opzoektabel met geautomatiseerde uitzonderingsmarkeringen voor ontbrekende koersen. |
+| **Niet-gekoppelde leverancierskosten en controle op datagezondheid** | Typfouten in boeking-IDs, ongeldige heffingscodes of ontbrekende FX-koersen laten leverancierskosten stilzwijgend naar $0 vallen, waardoor kunstmatig opgeblazen winstmarges ontstaan. | Voert een geautomatiseerde **diagnose-engine voor datagezondheid** (`ERR: UNKNOWN_CURRENCY`, `ERR: INVALID_BOOKING`) uit die defecte records in quarantaine plaatst voordat ze uw winst-en-verliesrekening vervuilen. |
 
-1. **Stel de belangrijkste parameters in.**
-   Configureer de basisvaluta, de referentiewisselkoersen, de toewijzing van transactietypen en het beleid voor toerekening van gedeelde kosten in `Setup_Params`. Dit is de controlelaag van het werkboek.
+---
 
-2. **Importeer bestaande data.**
-   Leg boekings- en containerrecords aan, definieer de servicecatalogus en plak of laad financiële transacties in `Raw_Transactions`. Bestaande boekhoudkundige exports, leverancierskostenrecords, klantfacturen of spreadsheetdata kunnen de transactiebron worden.
+## Zo voert u een controle van winstgevendheid en kostentoerekening van zendingen uit (workflow voor snelstart)
 
-3. **Krijg direct resultaten.**
-   Zodra de brondata zijn gevuld, rekent de berekeningsengine valuta automatisch om, classificeert ze transacties, controleert ze de koppelingsgezondheid en aggregeert ze geldige financiële regels tot een winst-en-verliesrekening op boekingniveau.
+Verander rommelige ERP-/boekhoudkundige exports, facturen van vervoerders en operationele spreadsheets in vier gestructureerde stappen in een schone **winst-en-verliesrekening op boekingniveau**:
 
-4. **Onderhoud via periodieke verversing.**
-   Voeg nieuwe boekingen, containers, services en transacties toe naarmate de operaties vorderen. De analysebladen actualiseren vanuit de onderliggende stam- en transactiedata, in plaats van voor elke zending een nieuwe rekenmachine te vereisen.
+### Stap 1: Basisvaluta, FX-koersen en toekenningsregels configureren
+Open het controleblad `Setup_Params` om uw basislijn voor vrachtboekhouding vast te leggen:
+- Leg uw **basisrapportagevaluta** (bijv. USD) vast en vul de referentie-**wisselkoersen (FX)** in.
+- Koppel uw **transactietypes** (klantomzet, directe kosten van omzet, bank-/overschrijvingskosten, klantdeposito's).
+- Selecteer uw **beleid voor toerekening van gedeelde kosten** voor FCL-zendingen met meerdere containers.
 
-**Stel de controleparameters in. Voer de operationele data in. Krijg de analyse per boeking. Ververs wanneer het bedrijf verandert.**
+*Actie:* Inspecteer de vooraf geconfigureerde parameterstructuur direct in de [gratis browserdemo voor kostentoerekening](https://hyvoid.github.io/Booking-Level-Profitability-Job-Costing-Engine-for-Freight-Forwarders/).
 
-## Waarom ik dit heb gebouwd
+---
 
-Winstgevendheid in het goederenvervoer is vaak moeilijker te zien dan het lijkt.
+### Stap 2: Stamrecords van boekingen en ruwe AR/AP-transacties importeren
+Vul uw stamlijsten (boekingen, containers en catalogus van vrachtdiensten) en plak of laad dan uw financiële regels in `Raw_Transactions`:
+- **Compatibele gegevensbronnen:** exports van QuickBooks/Xero, TMS-factureringslogboeken, facturen van oceaanvervoerders/NVOCC's, afschriften van douanemakelaars en handmatige operationele trackers.
+- **Geen handmatige herbouw van VLOOKUP vereist** — sleep ruwe regels eenvoudig in de gestandaardiseerde transactietabel.
 
-Een boeking kan klantomzet, oceaantransport, inspectie bij herkomst, ladingverzekering, documentatie, coördinatiekosten, leverancierskosten, bankkosten, deposito's, meerdere valuta en meerdere containers bevatten. Die records leven vaak in verschillende operationele of boekhoudkundige exports.
+---
 
-Het resulterende falen is niet noodzakelijkerwijs zwak financieel oordeel. Het is vaak een **gebroken analytische keten**.
+### Stap 3: Uitzonderingen op datagezondheid controleren en de geautomatiseerde winst-en-verliesrekening van de zending beoordelen
+Zodra transacties zijn geladen, voert de engine voor kostentoerekening automatisch uit:
+- Normaliseert vreemde valuta naar uw basisrapportagevaluta.
+- Markeert defecte koppelingen in stamdata (`Data Health Status`), zodat niet-gekoppelde leveranciersrekeningen nooit als nul-kostenposten verborgen blijven.
+- Aggregeert geverifieerde regels tot **winst-en-verliesrekening op boekingniveau**, **margeuitsplitsing per dienstlijn** en **eenheidseconomie op containerniveau**.
 
-Een boeking kan winstgevend lijken omdat één leverancierskost nooit aan de boeking is gekoppeld. Een transactie in vreemde valuta kan ontbreken omdat haar wisselkoers niet is geconfigureerd. Een gedeelde kost op boekingniveau kan verkeerd worden geteld bij het inzoomen op individuele containers.
+---
 
-Dit werkboek behandelt die falen als onderdeel van het analytische probleem.
+### Stap 4: Periodiek verversen en naar Excel exporteren voor doorlopende operaties
+Wanneer nieuwe schijfvertrekken, leveranciersfacturen of kosten voor opslag/demurrage binnenkomen, hang ze dan aan het transactielogboek om uw zendingsmarges over factureringscycli heen actueel te houden.
 
-Zie bijvoorbeeld niet:
+> 💡 **Klaar om dit op uw eigen live-zendingsgegevens en boekhoudkundige exports uit te voeren?**  
+> De browserversie is gebouwd voor directe verificatie van de workflow en testen in één sessie. Om uw eigen CSV/Excel-boekhoudkundige dumps te importeren, catalogi van vrachtkosten aan te passen, maandelijkse afsluitingsmomentopnames op te slaan en elke formule offline te controleren:  
+> 👉 **[Download het ontgrendelde Excel-sjabloon voor kostentoerekening bij expéditeurs](https://www.theseusworkshop.com/l/uyukd?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=freight-booking-job-costing)** en maak er uw herhaalbare maandelijkse engine voor winstgevendheid van zendingen van.
+
+---
+
+## De bedrijfslogica en methodiek
+
+Standaard boekhoudkundige software (zoals QuickBooks of Xero) is gebouwd rond **grootboekschema en kalendermaanden**, terwijl expéditeurs werken rond **boekingen, cognossementen (B/L) en containers** waarvan omzet en leveranciersrekeningen vaak meerdere maanden en valuta overspannen. 
+
+Om de mismatch tussen financiële boekhouding en operationele logistiek op te lossen, implementeert deze toolkit een **relationele methodiek voor kostentoerekening met 4 pijlers**:
+
+1. **Relationele modellering van de entiteitenhiërarchie (`Booking → Container → Service Line`):**  
+   In vrachtoperaties vallen kosten aan op verschillende structurele niveaus. Een vergoeding voor douaneafhandeling of een documentatievergoeding voor het cognossement geldt één keer per **boeking**, terminal handling charges (THC), drayage of chassis-split-vergoedingen gelden per **container (TEU/FEU)**. Het platdrukken hiervan in één enkele tabel veroorzaakt ernstige dubbele telling. Deze engine handhaaft een strenge relationele hiërarchie: directe containerkosten binden aan `Container_ID`, terwijl zendingsbrede gemeenschappelijke kosten binden aan `Booking_ID` en zich dynamisch verdelen via een deterministische toekenningsformule:
+   $$\text{Container Allocated Cost} = \text{Direct Container Cost} + \frac{\text{Booking-Level Shared Costs}}{\text{Total Active Containers in Booking}}$$
+2. **Ontkoppelde diagnostische toestand vs. numerieke aggregatie (architectuur zonder stille nul-fouten):**  
+   In standaard Excel-spreadsheets negeert een verkeerd gespelde boeking-ID in een `SUMIFS`-formule stilzwijgend een factuur van een oceaanvervoerder van $2.000 — waardoor een verlieslatende zending wild winstgevend lijkt. Omgekeerd breekt een `#N/A`-fout in een `VLOOKUP` het hele winst-en-verliesdashboard. Dit model gebruikt een **dual-track evaluatiemethode**: elke transactieregel passeert een poort voor referentiële integriteit (`Data_Health_Status`) die boeking-IDs, dienstcodes en valutasleutels valideert vóór de wiskundige uitvoering. Ongeldige regels geven expliciete diagnostieke tekenreeksen uit (`ERR: UNKNOWN_CURRENCY`, `ERR: ORPHAN_BOOKING`), terwijl ze een veilige `0` aan de aggregatie-engine doorgeven, waardoor gegarandeerd is dat het dashboard nooit crasht terwijl analisten visueel worden gewaarschuwd voor onvolledige margegegevens.
+3. **Gecentraliseerde triangulatie voor meerdere valuta:**  
+   Grensoverschrijdend goederenvervoer betekent agenten bij herkomst betalen in CNY/EUR, oceaanvracht afrekenen in USD en tussenliggende bankkosten voor overmakingen absorberen. Het model normaliseert elke ruwe transactieregel op niveau van regelpost ($T_i \times \text{FX}_{\text{rate}}$) vóór de opwaartse aggregatie van de winst-en-verliesrekening, waardoor de rondingsvervormingen en koersdrift worden geëlimineerd die gebruikelijk zijn in handmatige samenvattingsomrekeningen.
+4. **Scheiding van cashflow- en afboekingswinst-en-verliesrekening (deposito's vs. verdiende omzet):**  
+   Expéditeurs incasseren regelmatig voorafbetaalde deposito's van klanten of voorschotten op douanerechten voordat een schip vertrekt. Het mengen van klantdeposito's met verdiende vrachtomzet vervormt de ware brutomarge. De engine voor transactieclassificatie isoleert expliciet **balansdeposito's** van **omzet, kosten van omzet en bankkosten in de winst-en-verliesrekening** en levert een nauwkeurige eenheidsmargeweergave samen met transparantie over de cashpositie.
+
+---
+
+## Waarom ik dit heb gebouwd: de gebroken analytische keten in het goederenvervoer repareren
+
+Winstgevendheid in het goederenvervoer is veel moeilijker te zien dan het lijkt op een verkoopofferte.
+
+Eén enkele oceaan- of luchtboeking kan vrachtkosten van klanten, inspectie bij herkomst, ladingverzekering, documentatievergoedingen, lokale drayage, oceaanvracht van de vervoerder, bankkosten voor overmakingen, klantdeposito's, 3+ valuta en meerdere containers omvatten — verspreid over uiteenlopende operationele trackers en boekhoudkundige exports.
+
+Wanneer expéditeurs geld verliezen aan een zending, is de oorzaak zelden een slechte prijsintentie. **Het is een gebroken analytische keten:**
+- Een zending lijkt een **winnaar met 38.8% brutomarge** omdat een drayage-factuur van een leverancier van $1,500 een typfout in de boekingsreferentie had en uit de `SUMIFS`-formule werd uitgesloten.
+- Een vergoeding van een agent bij herkomst in vreemde valuta werd weggelaten omdat haar FX-koers niet was bijgewerkt in de opzoektabel.
+- Gedeelde douane- en documentatiekosten op boekingniveau werden per ongeluk vermenigvuldigd over 5 containers — of volledig genegeerd — toen per-containertarieven aan de klant werden geprijsd.
+
+Vertrouw bijvoorbeeld niet blindelings op een gebrekkige samenvatting zoals deze:
 
 ```text
-Booking Revenue       $8,500
-Reported COGS         $5,200
-Apparent Profit       $3,300
-Margin                   38.8%
+Booking Revenue        $8,500
+Reported COGS          $5,200
+Apparent Net Profit    $3,300
+Reported Margin         38.8%  <-- (Artificially inflated by missing vendor bill)
 ```
 
-… maar de workflow kan blootleggen dat de transactiedataset een niet-gekoppelde leverancierskost en een onbekende valuta bevat. De boeking wordt dan gemarkeerd, in plaats van gepresenteerd als een schone marge van 38,8%.
+Deze engine voor kostentoerekening markeert direct dat de onderliggende transactiedataset een **niet-gekoppelde leverancierskost** of een **niet-geconfigureerde valuta (`ERR: UNKNOWN_CURRENCY`)** bevat. De boeking wordt zichtbaar in quarantaine geplaatst voor gegevensopruiming, in plaats van aan het management te worden gepresenteerd als een schone marge van 38.8%.
 
-Het doel is niet weer een dashboard. Het is een **geproduceerd redeneerkader** voor het omzetten van transactiedata uit het goederenvervoer naar een verdedigbaar winstgevendheidsoverzicht per boeking.
+Het doel is niet nog een mooi ijdelheidsdashboard. Het is een **verdedigbaar financieel redeneerkader** dat garandeert dat uw winst-en-verliesrekening op boekingniveau wiskundig gezond is voordat u verkoopscommissies betaalt of prijskaarten van klanten vernieuwt.
 
-De implementatie scheidt numerieke berekeningsvelden expliciet van diagnosetekst. Een ontbrekende wisselkoers kan daarom numeriek veilig blijven voor aggregatie en tegelijkertijd een waarschuwing `ERR: UNKNOWN_CURRENCY` produceren. Dit voorkomt dat een fouttoestand een schijnbaar geldig financieel resultaat wordt. 
+---
 
-## Veelvoorkomende problemen in het goederenvervoer die dit oplost
+## Ad-hoc boekhoudkundige spreadsheets vs. deze engine voor kostentoerekening in het goederenvervoer
 
-| Probleem                                        | Zonder dit instrument                                                                                                  | Met dit instrument                                                                                                    |
-| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| **Winst alleen zichtbaar in aggregatie**        | Omzet en kosten op bedrijfsniveau verhullen welke individuele zendingen geld verdienen of verliezen.                          | Elke boeking krijgt een eigen weergave van omzet, kosten van omzet, bankkosten, nettowinst en marge.                              |
-| **Kosten komen aan in meerdere valuta**        | Valutakoersing gebeurt handmatig of inconsistent, waardoor vergelijking tussen boekingen onbetrouwbaar is.                 | Transacties gebruiken een gecontroleerde valuta-opzoeking met een expliciete uitzondering voor ontbrekende koers.                                  |
-| **Een boeking bevat meerdere containers**     | Gedeelde kosten kunnen worden verdubbeld, genegeerd of inconsistent toegekend bij de analyse van containereconomie.            | Gedeelde kosten op boekingniveau kunnen over het aantal containers worden verdeeld volgens een gedefinieerd beleid.                    |
-| **Winstgevendheid per service is onduidelijk**           | Omzet is wellicht per heffing bekend, maar de bijbehorende kost en marge zijn moeilijk te verzoeken over zendingen heen. | Aggregatie op serviceniveau legt winstgevendheid over boekingen heen bloot.                                                  |
-| **Kapotte koppelingen in stamdata vervormen de winst-en-verliesrekening onopgemerkt** | Ongeldige boeking-IDs, servicecodes of valuta kunnen ontbrekende kosten of misleidende nulwaarden worden.              | `Data Health Status` identificeert gebroken opzoeksketens en de berekeningsengine aggregeert alleen gezonde transacties. |
+| Evaluatiedimensie | Handmatige spreadsheets en generieke boekhouding (zonder deze tool) | Gestandaardiseerde engine voor kostentoerekening in het goederenvervoer (met deze tool) |
+| --- | --- | --- |
+| **Zichtbaarheid op zendingsniveau (B/L & AWB)** | Grootboek-software mengt alle maandelijkse facturen met elkaar, waardoor verborgen blijft welke specifieke zendingen, handelsroutes of klanten geld verliezen. | Genereert een directe **winst-en-verliesrekening boeking voor boeking** die bruto-omzet, directe kosten van omzet, bankkosten voor overmakingen, nettowinst en marge % uitsplitst. |
+| **Afstemming bij meerdere valuta (FX)** | Operators rekenen EUR, CNY, GBP en USD handmatig om met ad-hoc-koersen, wat onverklaarbare margeverschillen bij de maandafsluiting veroorzaakt. | Handhaaft een **gecentraliseerde FX-koerstabel** die elke factuurregel omrekent naar één basisvaluta en een expliciete waarschuwing geeft als een valutakoers ontbreekt. |
+| **Kostentoerekening bij meerdere FCL-containers** | Documentatievergoedingen, douaneafhandeling en boekingstoeslagen worden ofwel per container dubbel geteld of weggelaten uit de eenheidseconomie van containers. | Scheidt dynamisch **directe kosten van omzet per container** van **gedeelde boekingskosten** en verdeelt gedeelde vergoedingen gelijkmatig over het exacte aantal containers. |
+| **Marge bij nevenkosten en dienstcodes** | Expéditeurs kennen de totale factuurwaarde maar kunnen niet zeggen of zij geld verliezen aan drayage, ladingverzekering, inspectie bij herkomst of THD/THC. | Aggregeert omzet vs. leverancierskost per **granulaire vrachtdienstcode** en onthult welke toegevoegde diensten winst vs. margeverlies genereren. |
+| **Integriteit van stamdata en foutafhandeling** | Verkeerd gespelde boeking-IDs of defecte `VLOOKUP`-koppelingen laten leverancierskosten stilzwijgend naar nul vallen (wat winst opblazen) of breken het hele blad met `#N/A`-fouten. | Ingebouwde **diagnoselaag voor datagezondheid** isoleert ongeldige boeking-IDs, dienstcodes en FX-koersen en houdt numerieke aggregaties stabiel en auditklaar. |
 
-## Voor wie dit bedoeld is
+---
 
-Dit instrument is ontworpen voor **kleine en middelgrote expéditeurs, transportexploitanten, financiële teams, kostentoekeningsanalisten en eigenaren** die winstgevendheid op boeking- of zendingsniveau moeten begrijpen, in plaats van te vertrouwen op een algemene winst-en-verliesrekening op bedrijfsniveau.
+## Voor wie dit bedoeld is: doel-logistiekrollen en operationele scenario's
 
-Het past bij operaties waarin omzet- en kostenrecords al in spreadsheets of boekhoudkundige exports bestaan, maar waarin het bedrijf een gestructureerde manier nodig heeft om ze te verbinden.
+Deze toolkit is ontworpen voor **kleine en middelgrote expéditeurs (OTI's / NVOCC's), douanemakelaars, 3PL-operators en logistieke financiële teams** die kostentoerekening van zendingen op ondernemingsniveau nodig hebben zonder $20,000+ te betalen voor een uitvoering van een zwaar TMS/ERP-systeem:
 
-Het is vooral nuttig wanneer één boeking meerdere services, leveranciers, valuta, bankkosten en containers kan bevatten.
+* **Eigenaars en directeuren van expéditeurs:** Gebruik dit als **tool voor controle van winstgevendheid van zendingen en verkoopscommissies op directieniveau** om ware nettomarges te verifiëren (na bankkosten en gedeelde kosten) voordat u jaarlijkse prijscontracten met verzenders ondertekent of verkoopscommissies uitbetaalt.
+* **Logistieke financiële managers en vrachtboekhouders:** Gebruik dit als **maandelijks sjabloon voor afstemming van kostentoerekening** om de kloof te overbruggen tussen generieke boekhoudkundige software (QuickBooks, Xero, NetSuite) en operationele zendingsbestanden — en om niet-gefactureerde omzet of verweesde leveranciersrekeningen op te sporen voordat de boeken worden gesloten.
+* **Analisten van vrachtprijzen en managers van handelsroutes:** Gebruik dit als **analyseprogramma voor eenheidseconomie van containers en marges op nevenkosten** om te zien of oceaanvervoer, luchtvracht, douaneafhandeling, ladingverzekering of drayage over land winstgevendheid over specifieke handelsroutes aandrijft of erodeert.
+* **Operationele managers en dispatchers van goederenvervoer:** Gebruik dit als **rekenmachine voor kostentoerekening bij meerdere FCL/LCL-containers** bij het beheren van complexe projectcargo of boekingen met meerdere containers met gemengde valuta en gesplitste leveranciersfacturen.
+* **Deeltijd-CFO's en supply chain-consultants:** Gebruik dit als **diagnosekader voor margeverlies dat direct klaar is voor gebruik** bij het auditen van vrachtportfolios van klanten of het opschonen van rommelige operationele spreadsheets.
 
-Het is **niet** bedoeld om een TMS, ERP, boekhoudplatform of transactiesysteem met hoge concurrency te vervangen. Het is een lichte analytische uitvoeringslaag.
+*Let op: dit werkboek is **niet** bedoeld om een operationeel TMS (zoals CargoWise), een geautomatiseerd EDI-boekingsplatform of een wettelijk belastingboekhoudkundig systeem te vervangen. Het is de lichte **analytische uitvoeringslaag voor kostentoerekening** die uw operationele zendingsrecords verbindt met hun ware financiële uitkomst.*
 
-**Geen spreadsheet-expertise nodig om de browserversie te gebruiken. Open hem en begin direct met het inspecteren van de workflow.**
+---
 
-## Over mij
+## Veelgestelde vragen over kostentoerekening en margescenario's in het goederenvervoer
 
-Ik bouw lichtgewicht trackers en beslissingsondersteunende instrumenten voor situaties waarin er te veel bewegende delen zijn om in één hoofd te houden, maar niet genoeg complexiteit om een volledige enterprise-implementatie te rechtvaardigen.
+Als uw operatie in het goederenvervoer kampt met een van de volgende vragen over financiële afstemming, is dit model gestructureerd om ze standaard op te lossen:
 
-De centrale vraag is simpel:
+* **Voorkomen van margeverlies bij zendingen:** *Hoe stem ik facturen van klanten (AR) af tegen vertraagde rekeningen van oceaanvervoerders, drayage en douanemakelaars (AP) op niveau van individuele boeking of cognossement (B/L)?*
+* **Kostensplitsing bij meerdere FCL-containers:** *Hoe bereken ik kosten en winst per container nauwkeurig wanneer één enkele boeking 4x 40'HC-containers omvat met zowel containerspecifieke drayage-vergoedingen als gedeelde B/L-documentatievergoedingen?*
+* **Boekhouden van vracht in meerdere valuta in Excel:** *Hoe bouw ik een tracker voor de winst-en-verliesrekening van zendingen in Excel die oceaanvracht in USD, kosten bij herkomst in EUR/CNY en bankkosten voor overmakingen afhandelt zonder handmatige fouten bij valutakoersomrekening?*
+* **Controleren van brutowinst van verkoopsvertegenwoordigers:** *Hoe verifieer ik de ware nettomarge van een vrachtboeking voordat ik verkoopscommissies op brutowinst betaal?*
 
-> **Welke informatie moet op één plaats staan om de volgende beslissing vol vertrouwen te nemen?**
+---
 
-Deze kostentoerekening per boeking past die aanpak toe op het goederenvervoer. In plaats van winstgevendheid te behandelen als een eindboekhoudkundig rapport, verbindt het de operationele eenheid — de **boeking** — aan zijn transacties, services, containers, kosten en financiële uitkomst.
+## Over Theseus Workshop
+
+Ik bouw lichte, auditklare kaders voor beslissingsondersteuning in Excel en de browser voor operationele omgevingen waarin er te veel bewegende delen zijn om in één hoofd te houden — maar waarin een opgeblazen uitroling van ondernemingssoftware overbodig is.
+
+De centrale ontwerpvraag achter elke tool is eenvoudig:
+
+> **"Welke exacte operationele en financiële gegevens moeten op één plaats staan zodat de volgende bedrijfsbeslissing wiskundig voor de hand ligt?"**
+
+Deze **engine voor winstgevendheid en kostentoerekening op boekingniveau** past dat principe toe op internationale goederenvervoer — door de centrale operationele eenheid (**de boeking en container**) direct te verbinden met zijn transacties in meerdere valuta, dienstlijnen voor nevenkosten, gegevensstatus en ware eindwinst.
+
+---
+
+*Keywords: Excel-sjabloon voor kostentoerekening bij expéditeurs, rekenmachine voor winstgevendheid van zendingen, spreadsheet voor winst-en-verliesrekening op boekingniveau, NVOCC-margetracker, model voor kostentoerekening van FCL-containers, sjabloon voor afstemming van vrachtboekhouding AR/AP, analyse van logistieke brutomarge.*
+
 
 ## Technische details
 
 <details>
 <summary>Voor technische reviewers, Excel-practitioners en medewerkers</summary>
 
-### Werkboekarchitectuur
+### Architectuur van het werkboek
 
 Het werkboek is georganiseerd rond vier functionele lagen: **regels en parameters → stamdata → transactie-invoer → berekening en analytische uitvoer**.
 
@@ -112,7 +180,7 @@ Het ontwerp bevat 11 bladen:
 
 | Laag              | Blad                   | Rol                                                                             |
 | ------------------ | ----------------------- | -------------------------------------------------------------------------------- |
-| Regels & parameters | `Instructions`          | Bedieningsinstructies, regels voor datainvoer en bedrijfsdefinities               |
+| Regels & parameters | `Instructions`          | Bedieningsinstructies, regels voor gegevensinvoer en bedrijfsdefinities               |
 | Regels & parameters | `Setup_Params`          | Basisvaluta, wisselkoersen, transactietoewijzingen en beleid voor toerekening van gedeelde kosten |
 | Stamdata        | `Booking_Master`        | Boekingsindex, klant, status en aantal containers                             |
 | Stamdata        | `Container_Master`      | 1:N-relatie tussen boeking en container                                            |
@@ -153,9 +221,9 @@ Booking_PL  Container_  Service_
           Executive_Dashboard
 ```
 
-De bronarchitectuur benoemt drie belangrijke multi-hop opzoeksketens: een keten van valuta/financiële behandeling met vier hops, een keten van gedeelde kosten/containerboring met vier hops, en een keten van serviceclassificatie met drie hops. 
+De bronarchitectuur benoemt drie belangrijke opzoeksketens met meerdere hops: een keten van valuta/financiële behandeling met vier hops, een keten van gedeelde kosten/containerboring met vier hops, en een keten van serviceclassificatie met drie hops. 
 
-De kritische ontwerpregel is dat **berekeningswaarden en diagnostische toestanden gescheiden blijven**. `USD Equivalent` blijft numeriek, terwijl `Data Health Status` fouten draagt zoals `ERR: UNKNOWN_CURRENCY`. Dit behoudt `SUMIFS`-compatibiliteit en voorkomt tegelijkertijd dat kapotte transacties de winst-en-verliesengine binnenkomen. 
+De kritieke ontwerpregel is dat **berekeningswaarden en diagnostische toestanden gescheiden blijven**. `USD Equivalent` blijft numeriek, terwijl `Data Health Status` fouten draagt zoals `ERR: UNKNOWN_CURRENCY`. Dit behoudt `SUMIFS`-compatibiliteit en voorkomt tegelijkertijd dat defecte transacties de engine van de winst-en-verliesrekening binnenkomen. 
 
 ### Drie valstrikken die zelfs ervaren transportexploitanten te pakken nemen
 
@@ -163,7 +231,7 @@ De kritische ontwerpregel is dat **berekeningswaarden en diagnostische toestande
 
 **1. Beslissing:** Een boeking lijkt een bepaalde kost en marge te hebben.
 
-**2. Verborgen gebrek:** Een leverancierstransactie is uitgedrukt in een valuta die niet is geconfigureerd in de referentietabel van wisselkoersen.
+**2. Verborgen gebrek:** Een transactie van een leverancier is uitgedrukt in een valuta die niet is geconfigureerd in de referentietabel van wisselkoersen.
 
 **3. Impact van de beslissing:** Als de ontbrekende koers onjuist als `1.0` wordt behandeld, kan een vreemd bedrag als `50,000` veranderen in `$50,000 USD`, waardoor het boekingsresultaat radicaal wordt vervormd.
 
@@ -171,7 +239,7 @@ De kritische ontwerpregel is dat **berekeningswaarden en diagnostische toestande
 
 **5. Juiste aanpak:** Geef een neutrale numerieke waarde van `0` terug voor het berekeningsveld en rapporteer `ERR: UNKNOWN_CURRENCY` afzonderlijk.
 
-**6. Gecorrigeerde beslissing:** De boeking wordt gemarkeerd voor aanvulling van data, in plaats van een valse winst of verlies toegewezen te krijgen.
+**6. Gecorrigeerde beslissing:** De boeking wordt gemarkeerd voor aanvulling van gegevens, in plaats van een valse winst of verlies toegewezen te krijgen.
 
 ```text
 Wrong:
@@ -222,7 +290,7 @@ De belangrijke regel is: **wijs een onbekende valuta nooit standaard 1.0 toe**.
 
 **5. Juiste aanpak:** De engine aggregeert alleen transacties met `Data Health Status = "OK"` en rapporteert het aantal ongeldige regels afzonderlijk.
 
-**6. Gecorrigeerde beslissing:** De boeking wordt behandeld als **voorlopig** tot de data-uitzonderingen zijn opgelost.
+**6. Gecorrigeerde beslissing:** De boeking wordt behandeld als **voorlopig** tot de gegevensuitzonderingen zijn opgelost.
 
 ```text
 Wrong:
@@ -298,7 +366,7 @@ IF(
 Beschouw een boeking in het goederenvervoer met de volgende geldige transacties:
 
 | Post                      | Type     | Oorspronkelijk bedrag | Valuta | USD-equivalent |
-| ------------------------- | -------- | -------------: | -------- | -------------: |
+| ------------------------- | -------- | --------------: | -------- | -------------: |
 | Klantfactuur          | Revenue  |           8,500 | USD      |         $8,500 |
 | Leverancierskost oceaanvervoer | COGS     |           3,000 | USD      |         $3,000 |
 | Inspectie bij herkomst         | COGS     |             900 | USD      |           $900 |
@@ -331,13 +399,13 @@ Profit Margin
 
 Het terugvorderbare deposito van `$500` wordt apart gevolgd, in plaats van te worden behandeld als bedrijfsomzet of kosten van omzet.
 
-Stel nu dat één aanvullende leverancierstransactie wordt ingevoerd in een niet-geconfigureerde valuta. Het systeem voegt de transactie **niet** stilzwijgend toe aan de kosten van omzet. De toegepaste wisselkoers wordt `0`, de USD-berekening blijft numeriek, en het diagnostiekveld rapporteert `ERR: UNKNOWN_CURRENCY`. De boeking ontvangt een gezondheidswaarschuwing, in plaats van als schoon te worden gepresenteerd.
+Stel nu dat één aanvullende transactie van een leverancier wordt ingevoerd in een niet-geconfigureerde valuta. Het systeem voegt de transactie **niet** stilzwijgend toe aan de kosten van omzet. De toegepaste wisselkoers wordt `0`, de USD-berekening blijft numeriek, en het diagnostiekveld rapporteert `ERR: UNKNOWN_CURRENCY`. De boeking ontvangt een gezondheidswaarschuwing, in plaats van als schoon te worden gepresenteerd.
 
 De operationele aanbeveling verandert dienovereenkomstig:
 
-> **Gebruik de marge van 55,34% niet als eindcijfer voor winstgevendheid tot de onopgeloste transactie is gecorrigeerd.**
+> **Gebruik de marge van 55.34% niet als eindcijfer voor winstgevendheid tot de onopgeloste transactie is gecorrigeerd.**
 
-Dit is het centrale onderscheid tussen een winstgevendheidsrekenmachine en een gecontroleerde kostentoekeningsworkflow: het resultaat gaat vergezeld van bewijs over de vraag of de onderliggende data volledig genoeg zijn om te vertrouwen.
+Dit is het centrale onderscheid tussen een winstgevendheidsrekenmachine en een gecontroleerde workflow voor kostentoerekening: het resultaat gaat vergezeld van bewijs over de vraag of de onderliggende gegevens volledig genoeg zijn om te vertrouwen.
 
 ### Formulereferentie
 
@@ -364,7 +432,7 @@ Dit is het centrale onderscheid tussen een winstgevendheidsrekenmachine en een g
 )
 ```
 
-Als er nog geen container is ingevoerd, valt de noemer terug op `1`. Dit is een rekensafeguard, terwijl de ontbrekende-containervoorwaarde operationeel toch als een datakwaliteitsprobleem moet worden behandeld. 
+Als er nog geen container is ingevoerd, valt de noemer terug op `1`. Dit is een rekenbeveiliging, terwijl de ontbrekende-containervoorwaarde operationeel toch als een gegevenskwaliteitsprobleem moet worden behandeld. 
 
 </details>
 
@@ -404,7 +472,7 @@ Een onbekende valuta levert `0`, niet `1.0`.
 <details>
 <summary>Raw Transactions — Financiële behandeling</summary>
 
-**Doel:** Koppel operationele transactietypen aan financiële categorieën.
+**Doel:** Koppel operationele transactietypes aan financiële categorieën.
 
 ```excel
 =MAP(
@@ -456,7 +524,7 @@ Deze kolom numeriek houden is belangrijk omdat stroomafwaartse `SUMIFS`-berekeni
 <details>
 <summary>Raw Transactions — Status datagezondheid</summary>
 
-**Doel:** Valideer boekings-, service- en wisselkoerskoppeling onafhankelijk van de financiële berekeningskolommen.
+**Doel:** Valideer koppelingen van boeking, service en wisselkoers onafhankelijk van de financiële berekeningskolommen.
 
 ```excel
 =MAP(
@@ -591,14 +659,14 @@ De essentiële controle is het herhaalde criterium `Data Health Status = "OK"`.
 | Winstgevendheid boeking  | Omzet van nul mag geen delingsfout produceren               | Marge levert `0`                                                                 |
 | Gezondheid directiedata  | Elke niet-lege status anders dan `OK` wordt geteld                 | Dashboard toont een waarschuwing in plaats van een onvoorwaardelijk schone toestand                      |
 
-De bron-validatie bevestigt de dekking van de kern invoer van boeking, container, service en transactie, plus de uitvoer van USD-equivalent, nettowinst, marge en toegekende kost. Ze verifieert ook specifiek de scheiding tussen diagnosetekst en numerieke `SUMIFS`-velden. 
+De bron-validatie bevestigt de dekking van de kerninvoer van boeking, container, service en transactie, plus de uitvoer van USD-equivalent, nettowinst, marge en toegekende kost. Ze verifieert ook specifiek de scheiding tussen diagnosetekst en numerieke `SUMIFS`-velden. 
 
 <!-- Technical Details parent <details> intentionally remains open for Part 2. -->
 ### Kruisvalidatie en paraatheid voor implementatie
 
 De werkboekarchitectuur is ontworpen om de analytische keten te valideren **voordat** het management op de resulterende winst-en-verliesrekening vertrouwt.
 
-De bronimplementatie controleert expliciet de toewijzingsketen van transactietypen, de opzoeksketen van wisselkoersen, de koppeling met Service Master, de toekeningsketen van gedeelde kosten en de compatibiliteit tussen diagnosetekst en numerische aggregatievelden. 
+De bronimplementatie controleert expliciet de toewijzingsketen van transactietypes, de opzoeksketen van wisselkoersen, de koppeling met Service Master, de toekenningsketen van gedeelde kosten en de compatibiliteit tussen diagnosetekst en numerieke aggregatievelden. 
 
 | Validatiedimensie         | Wat wordt gecontroleerd                                                                  | Verwachte uitkomst                                          |
 | ---------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------- |
@@ -612,7 +680,7 @@ De bronimplementatie controleert expliciet de toewijzingsketen van transactietyp
 | **Nul-omzetbescherming**  | De margesberekening gaat om met Revenue = 0                                    | Geen `#DIV/0!`                                             |
 | **Directiemonitoring**     | Mondiale transactiefouten worden apart geteld                                 | Dashboard signaleert onopgeloste problemen in brondata          |
 
-De kruisvalidatiematrix van de implementatie stelt dat de kern invoervelden — boeking, container, service en transactiedata — en de belangrijkste uitvoer — USD-equivalent, nettowinst, marge en toegekende kost — door de architectuur zijn gedekt. 
+De kruisvalidatiematrix van de implementatie stelt dat de kerninvoervelden — boeking, container, service en transactiegegevens — en de belangrijkste uitvoer — USD-equivalent, nettowinst, marge en toegekende kost — door de architectuur zijn gedekt. 
 
 ### Standaard operationele procedure
 
@@ -638,7 +706,7 @@ Leg de boeking aan in `Booking_Master`.
 
 Als containers relevant zijn, leg dan hun boeking-naar-container-relaties aan in `Container_Master`.
 
-Onderhoud de gestandaardiseerde servicecatalogus in `Service_Master`.
+Onderhoud de gestandaardiseerde servicecatalogus in `Service_Master`. 
 
 Begin de financiële analyse niet door vrije servicenamen of boeking-identifiers direct in rapportagebladen te typen. De stamtabellen zijn de referentielaag voor stroomafwaartse opzoeksketens. 
 
@@ -659,7 +727,7 @@ Elke transactie moet het passende van het volgende bevatten:
 
 De transactietabel is de enige bron die de gedetailleerde records van financiële gebeurtenissen zou moeten ontvangen. De berekeningsengine mag niet handmatig worden bewerkt. 
 
-#### 3. Datagezondheid controleren
+#### 3. Gezondheid van gegevens controleren
 
 Controleer `Raw_Transactions[Data Health Status]`.
 
@@ -691,19 +759,19 @@ Gebruik:
 
 Dit creëert een inzoompad van **mondiale winstgevendheid → boeking → service → container → transactie**, in plaats van elke vraag uit één samenvattend dashboard te laten beantwoorden.
 
-### Regels voor data-onderhoud
+### Regels voor gegevensonderhoud
 
 De architectuur steunt op gecontroleerde stamdata omdat Excel niet dezelfde harde handhaving van vreemde sleutels biedt als een database- of ERP-platform.
 
 De belangrijkste onderhoudsregels zijn:
 
-1. **Overschrijf geen door formules gegenereerde velden niet.**
+1. **Overschrijf geen door formules gegenereerde velden.**
 2. **Typ servicenamen niet handmatig in waar een servicecode moet worden gebruikt.**
 3. **Voer geen nieuwe valuta in zonder eerst haar wisselkoers aan `Setup_Params` toe te voegen.**
 4. **Gebruik `1.0` niet als terugval voor een ontbrekende wisselkoers.**
 5. **Schrijf geen fouttekst in numerieke aggregatiekolommen.**
 6. **Bewerk de uitvoer van `Job_Costing_Engine` niet handmatig.**
-7. **Los niet-OK-transactieregels op voordat u de marge van een boeking als eindgulig behandelt.**
+7. **Los niet-OK-transactieregels op voordat u de marge van een boeking als eindguldig behandelt.**
 8. **Houd het beleid voor toerekening van gedeelde kosten gecentraliseerd in `Setup_Params`.**
 
 Het bronontwerp verbiedt specifiek het hard coderen van globale parameters in formules en centraliseert basisvaluta, wisselkoersen, transactietoewijzingen en toekenningsbeleid in `Setup_Params`. 
@@ -723,7 +791,7 @@ Het bronontwerp verbiedt specifiek het hard coderen van globale parameters in fo
 
 Filter de kolom `Data Health Status` in `Raw_Transactions` om waarden anders dan `OK` te tonen.
 
-Los daarna elk onderliggend probleem in de brondata op, in plaats van de uitvoer van de winst-en-verliesrekening handmatig te wijzigen.
+Los daarna elk onderliggend probleem in de brongegevens op, in plaats van de uitvoer van de winst-en-verliesrekening handmatig te wijzigen.
 
 Het Executive Dashboard is ontworpen om deze toestand via een mondiale gezondheidskaart bloot te leggen:
 
@@ -793,7 +861,7 @@ Controleer drie dingen in volgorde:
 
 Onder `EQUAL_SHARE` worden gedeelde kosten van omzet op boekingniveau gedeeld door het aantal containers van de boeking voordat ze aan directe containerkosten worden toegevoegd.
 
-Onder `NO_ALLOCATE` worden gedeelde kosten op boekingniveau niet aan individuele containers toegekend.
+Onder `NO_ALLOCATE` worden gedeelde kosten op boekingniveau niet aan individuele containers toegekend. 
 
 Het onderscheid is van belang omdat het toekennen van de volledige gedeelde kost op boekingniveau aan elke container dezelfde economische kost zou dupliceren. 
 
@@ -803,8 +871,8 @@ Dit werkboek is opzettelijk ontworpen als een **lichte analytische controlelaag*
 
 Het is het sterkst wanneer:
 
-* operationele en financiële data al in spreadsheets of exports bestaan;
-* de belangrijkte analyse-eenheid een boeking of zending is;
+* operationele en financiële gegevens al in spreadsheets of exports bestaan;
+* de belangrijkste analyse-eenheid een boeking of zending is;
 * het management winstgevendheid op opdrachtniveau nodig heeft;
 * services en heffingen over boekingen heen moeten worden vergeleken;
 * meerdere valuta een consistente rapportagebasis nodig hebben;
@@ -910,12 +978,12 @@ Executive_Dashboard
 Operational Review
 ```
 
-Het resultaat is een herhaalbare workflow en geen eenmalige spreadsheetberekening: leg de referentiedata eenmaal vast, voeg nieuwe operationele transacties toe, los uitzonderingen op, en laat de berekenings- en analyselagen actualiseren vanuit hetzelfde onderliggende datamodel. 
+Het resultaat is een herhaalbare workflow en geen eenmalige spreadsheetberekening: leg de referentiegegevens eenmaal vast, voeg nieuwe operationele transacties toe, los uitzonderingen op, en laat de berekenings- en analyselagen actualiseren vanuit hetzelfde onderliggende gegevensmodel. 
 
 <!-- Part 2 ends with the Technical Details parent <details> intentionally OPEN. Do not add </details> here. -->
 ### Slotopmerkingen over de architectuur
 
-Het werkboek is opzettelijk gebouwd rond een **enkele winstgevendheidsengine op boekingniveau**, in plaats van om een verzameling losse rekenmachines.
+Het werkboek is opzettelijk gebouwd rond een **enkele engine voor winstgevendheid op boekingniveau**, in plaats van om een verzameling losse rekenmachines.
 
 De analytische hiërarchie is:
 
@@ -939,7 +1007,7 @@ Booking
 
 Deze structuur houdt de boeking als centrale economische eenheid en staat gebruikers tegelijkertijd toe om naar beneden in services en containers of naar boven in winstgevendheid over boekingen heen in te zoomen. 
 
-De implementatie erkent ook expliciet drie multi-hop opzoeksketens:
+De implementatie erkent ook expliciet drie opzoeksketens met meerdere hops:
 
 1. **Transactie → Financiële behandeling → Wisselkoers → USD-equivalent → Winst-en-verliesrekening van de boeking**
 2. **Boeking → Aantal containers → Beleid gedeelde kosten → Toerekening gedeelde kosten → Containeranalyse**
@@ -990,7 +1058,7 @@ Dit maakt het werkboek nuttig voor terugkerende vragen zoals:
 * Welke services produceren de sterkste marges?
 * Welke zendingskosten veroorzaken een onverwacht verlies?
 * Welke kosten op boekingniveau moeten aan containers worden toegekend?
-* Zijn de gerapporteerde marges betrouwbaar, of verbergen onopgeloste problemen in brondata kosten?
+* Zijn de gerapporteerde marges betrouwbaar, of verbergen onopgeloste problemen in brongegevens kosten?
 * Waar moeten prijsstelling, leveranciersonderhandeling of operationele review zich als volgende op richten?
 
 De bron-SOP volgt dezelfde volgorde: leg stamdata vast, registreer financiële transacties, inspecteer `Data Health Status`, en gebruik daarna de winstgevendheidsdashboards voor beoordeling. 
