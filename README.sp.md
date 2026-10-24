@@ -1,103 +1,171 @@
 [ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
-# Motor de rentabilidad y cálculo de costos por reserva para transitarios
 
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE) [![Platform](https://img.shields.io/badge/Platform-Browser%20%2B%20Excel-217346.svg)](#) [![Tool Type](https://img.shields.io/badge/Tool%20Type-Decision%20Support-2251FF.svg)](#)
+# Plantilla de Excel de cálculo de costos para transitarios & Calculadora de rentabilidad de envíos (cuenta de resultados a nivel de reserva)
+<img width="2880" height="1228" alt="image" src="https://github.com/user-attachments/assets/f89c1a0f-f576-43af-b26a-02bae4a47348" />
 
-**Vea la ganancia real de cada reserva de transporte de mercancías — ingresos, costo de ventas, comisiones bancarias, depósitos, rentabilidad por servicio y costo por contenedor — sin reconstruir el análisis manualmente.**
 
-**Sin registro. Sin instalación. Gratuito en su navegador.**
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE) [![Platform](https://img.shields.io/badge/Platform-Browser%20%2B%20Excel-217346.svg)](#) [![Tool Type](https://img.shields.io/badge/Tool%20Type-Financial%20Spreadsheet%20Model-2251FF.svg)](#)
 
-Pruebe la versión de navegador gratis. Si necesita la versión de Excel, puede comprarla con una garantía de devolución de 30 días, sin preguntas.
+**Una plantilla de Excel de cálculo de costos para transitarios lista para auditoría y una calculadora interactiva de cuenta de resultados por envío — diseñada para seguir el margen bruto a nivel de reserva, las conversiones de divisas (FX) entre varias monedas, la asignación de costos de contenedores FCL/LCL y la rentabilidad de los cargos de flete. Concilie las facturas de clientes (AR), las cuentas de transportistas (AP), el drayage, el despacho de aduanas y las comisiones bancarias por transferencias en un modelo financiero logístico estandarizado — disponible gratis en su navegador o como hoja de cálculo Excel desbloqueada.**
+
+**Sin registro. Sin instalación. Gratis para probar en su navegador.**
+
+Use la aplicación web interactiva para inspeccionar inmediatamente el flujo de trabajo de cálculo de costos, o descargue la plantilla completa de hoja de cálculo Excel para importar sus propias exportaciones contables — respaldada por una garantía de devolución de 30 días sin preguntas.
+
+> 🌐 **Iniciar la aplicación web gratuita** → [Calculadora web interactiva de cálculo de costos y cuenta de resultados de envíos para transitarios](https://hyvoid.github.io/Booking-Level-Profitability-Job-Costing-Engine-for-Freight-Forwarders/)  
+> 📥 **Obtener el modelo completo de Excel** → [Descargar la plantilla de Excel editable de cálculo de costos y rentabilidad de reservas para transitarios](https://www.theseusworkshop.com/l/uyukd?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=freight-booking-job-costing)  
 >
-> 🌐 **Abrir en el navegador** → [aquí](https://hyvoid.github.io/Booking-Level-Profitability-Job-Costing-Engine-for-Freight-Forwarders/)
-> 📥 **Descargar Excel** → [enlace de compra](https://www.theseusworkshop.com/l/uyukd?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=freight-booking-job-costing)
->
-> El mismo flujo analítico está disponible en los formatos navegador y Excel.
+> *Tanto la versión de navegador como el libro de Excel descargable comparten exactamente la misma arquitectura contable relacional.*
 
+---
 
-## Lo que esta herramienta le ayuda a seguir
+## Lo que le ayuda a seguir: correspondencia de puntos débiles a soluciones en el transporte de mercancías
 
-* **Ingresos vs. costo de ventas vs. comisiones bancarias por reserva** — para que la rentabilidad sea visible a nivel de envío y no solo a nivel de empresa.
-* **Beneficio neto y margen de beneficio para cada reserva** — para que los trabajos de margen bajo o con pérdidas puedan identificarse antes de desaparecer dentro de los informes financieros agregados.
-* **Rentabilidad por servicio o por cargo** — mostrando si el transporte marítimo, la inspección, el seguro, la documentación, la coordinación u otras líneas de servicio contribuyen realmente al beneficio.
-* **Exposición al costo a nivel de contenedor** — separando los costos directos de contenedor de los costos compartidos a nivel de reserva cuando un envío contiene varios contenedores.
-* **Transacciones en moneda extranjera convertidas a una base común en USD** — para que las líneas de ingresos y costos en monedas mixtas puedan compararse de manera coherente.
-* **Excepciones de integridad de datos antes de que contaminen la cuenta de resultados** — identificación de reservas inválidas, códigos de servicio inválidos y tipos de cambio ausentes, en lugar de tratar silenciosamente datos defectuosos como números válidos.
+En lugar de esperar a los informes contables agregados de fin de mes, esta **hoja de cálculo logística de cálculo de costos** sigue y resuelve exactamente los puntos ciegos operativos que causan **fuga de margen** en el transporte de mercancías marítimo, aéreo y multimodal:
 
-## Flujo de inicio rápido
+| Métrica objetivo a seguir / punto de dolor | El punto ciego común de la contabilidad de fletes | Cómo este modelo de cálculo de costos lo resuelve y lo sigue |
+| :--- | :--- | :--- |
+| **Cuenta de resultados y margen bruto a nivel de reserva** | El beneficio solo es visible a nivel de toda la empresa mes a mes, ocultando los envíos con pérdidas y las rutas con precios demasiado bajos. | Sigue **ingresos AR vs. costo de ventas AP vs. comisiones bancarias por transferencias** por cada ID de reserva individual (nivel B/L o AWB) para exponer el **beneficio neto y el margen %** en tiempo real. |
+| **Rentabilidad de códigos de cargo y cargos accesorios** | Conocer los ingresos totales de un envío sin saber si el transporte marítimo, el drayage, el despacho de aduanas o la demora realmente ganaron dinero. | Sigue la contribución al margen a través de **códigos de servicio de flete** granulares (transporte marítimo, THC, inspección en origen, seguro de carga, documentación, coordinación). |
+| **Asignación de costos compartidos con varios contenedores (FCL)** | Cuando un master-B/L tiene varios contenedores, los cargos fijos a nivel de reserva se duplican o se ignoran durante el análisis a nivel de contenedor. | Separa los **costos directos de contenedor** de los **costos compartidos a nivel de reserva**, asignando automáticamente los cargos compartidos entre los contenedores mediante una política controlada. |
+| **Ganancia/pérdida y normalización con varias monedas (FX)** | Pagar a los transportistas marítimos en USD, a los agentes de origen en EUR/CNY y facturar a los clientes en moneda local usando tipos de cambio manuales inconsistentes. | Convierte todas las líneas AR/AP de monedas mixtas a una **base estandarizada en USD** mediante una tabla de búsqueda de divisas centralizada con marcas automáticas de excepción por tasas ausentes. |
+| **Costos de proveedor no vinculados y auditoría de integridad de datos** | Errores de escritura en los ID de reserva, códigos de cargo inválidos o tasas de divisas ausentes hacen que los costos de proveedor caigan silenciosamente a $0, creando márgenes de beneficio artificialmente inflados. | Ejecuta un **motor de diagnóstico de integridad de datos** automatizado (`ERR: UNKNOWN_CURRENCY`, `ERR: INVALID_BOOKING`) que pone en cuarentena los registros defectuosos antes de que contaminen su cuenta de resultados. |
 
-1. **Establezca los parámetros clave.**
-   Configure la moneda base, los tipos de cambio de referencia, las correspondencias de tipos de transacción y la política de asignación de costos compartidos en `Setup_Params`. Esta es la capa de control del libro de trabajo.
+---
 
-2. **Importe los datos existentes.**
-   Establezca los registros de reserva y contenedor, defina el catálogo de servicios y luego pegue o cargue las transacciones financieras en `Raw_Transactions`. Las exportaciones contables existentes, los registros de costos de proveedores, las facturas de clientes o los datos de hoja de cálculo pueden convertirse en la fuente de transacciones.
+## Cómo realizar una auditoría de rentabilidad de envíos y cálculo de costos (flujo de trabajo de inicio rápido)
 
-3. **Obtenga resultados al instante.**
-   Una vez poblados los datos de origen, el motor de cálculo convierte automáticamente las monedas, clasifica las transacciones, comprueba la integridad de los vínculos y agrega las líneas financieras válidas en una cuenta de resultados a nivel de reserva.
+Convierta exportaciones desordenadas de ERP/contabilidad, facturas de transportistas y hojas de cálculo operativas en una limpia **cuenta de resultados a nivel de reserva** en cuatro pasos estructurados:
 
-4. **Mantenga mediante actualización periódica.**
-   Añada nuevas reservas, contenedores, servicios y transacciones a medida que avanzan las operaciones. Las hojas de análisis se actualizan a partir de los datos maestros y de transacción subyacentes, en lugar de exigir una nueva calculadora para cada envío.
+### Paso 1: Configurar la moneda base, las tasas de divisas y las reglas de asignación
+Abra la hoja de control `Setup_Params` para establecer su línea base de contabilidad de fletes:
+- Defina su **moneda base de información** (p. ej., USD) y complete las **tasas de cambio (FX)** de referencia.
+- Asigne sus **tipos de transacción** (ingresos de clientes, costo de ventas directo, comisiones bancarias/de transferencia, depósitos de clientes).
+- Seleccione su **política de asignación de costos compartidos** para envíos FCL con varios contenedores.
 
-**Establezca los parámetros de control. Inserte los datos operativos. Obtenga el análisis por reserva. Actualice cuando el negocio cambie.**
+*Acción:* Inspeccione la estructura de parámetros preconfigurada al instante en la [demo de navegador gratuita de cálculo de costos](https://hyvoid.github.io/Booking-Level-Profitability-Job-Costing-Engine-for-Freight-Forwarders/).
 
-## Por qué construí esto
+---
 
-La rentabilidad del transporte de mercancías suele ser más difícil de ver de lo que parece.
+### Paso 2: Importar registros maestros de reservas y transacciones AR/AP sin procesar
+Complete sus listas maestras (reservas, contenedores y catálogo de servicios de flete) y luego pegue o cargue sus partidas financieras en `Raw_Transactions`:
+- **Fuentes de datos compatibles:** exportaciones de QuickBooks/Xero, registros de facturación de TMS, facturas de flete de transportistas marítimos/NVOCC, extractos de agentes de aduanas y rastreadores operativos manuales.
+- **No se requiere reconstruir manualmente VLOOKUP** — simplemente suelte las filas sin procesar en la tabla de transacciones estandarizada.
 
-Una reserva puede contener ingresos de clientes, transporte marítimo, inspección en origen, seguro de carga, documentación, cargos de coordinación, costos de proveedores, comisiones bancarias, depósitos, varias monedas y varios contenedores. Esos registros suelen vivir en diferentes exportaciones operativas o contables.
+---
 
-El fallo resultante no es necesariamente un mal juicio financiero. A menudo es una **cadena analítica rota**.
+### Paso 3: Auditar las excepciones de integridad de datos y revisar la cuenta de resultados automatizada del envío
+En cuanto se cargan las transacciones, el motor de cálculo de costos realiza automáticamente:
+- Normaliza las monedas extranjeras a su moneda base de información.
+- Marca las vinculaciones de datos maestros defectuosas (`Data Health Status`) para que las facturas de proveedor no vinculadas nunca se oculten como partidas de costo cero.
+- Agrega las líneas verificadas en la **cuenta de resultados a nivel de reserva**, el **desglose de margen por línea de servicio** y la **economía unitaria a nivel de contenedor**.
 
-Una reserva puede parecer rentable porque un costo de proveedor nunca se vinculó a la reserva. Una transacción en moneda extranjera puede omitirse porque su tipo de cambio no estaba configurado. Un costo compartido a nivel de reserva puede contarse incorrectamente al desglosar los contenedores individuales.
+---
 
-Este libro de trabajo trata esos fallos como parte del problema analítico.
+### Paso 4: Actualizar periódicamente y exportar a Excel para operaciones continuas
+A medida que llegan nuevas salidas de buques, facturas de proveedores o cargos por detención/demora, añádalos al registro de transacciones para mantener sus márgenes de envío actualizados a lo largo de los ciclos de facturación.
 
-Por ejemplo, en lugar de ver:
+> 💡 **¿Listo para ejecutar esto con sus propios datos de envíos en vivo y exportaciones contables?**  
+> La versión de navegador está construida para la verificación instantánea del flujo de trabajo y pruebas en una sola sesión. Para importar sus propios volcados contables CSV/Excel, personalizar catálogos de cargos de flete, guardar instantáneas de cierre mensual y auditar cada fórmula sin conexión:  
+> 👉 **[Descargue la plantilla de Excel desbloqueada de cálculo de costos para transitarios](https://www.theseusworkshop.com/l/uyukd?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=freight-booking-job-costing)** y conviértala en su motor mensual repetible de rentabilidad de envíos.
+
+---
+
+## La lógica de negocio y la metodología
+
+El software contable estándar (como QuickBooks o Xero) está construido en torno al **plan de cuentas y los meses naturales**, mientras que los transitarios operan en torno a **reservas, conocimientos de embarque (B/L) y contenedores**, cuyos ingresos y facturas de proveedor a menudo abarcan varios meses y monedas. 
+
+Para resolver la discrepancia entre la contabilidad del libro mayor y la logística operativa, este kit de herramientas implementa una **metodología relacional de cálculo de costos de 4 pilares**:
+
+1. **Modelado relacional de la jerarquía de entidades (`Booking → Container → Service Line`):**  
+   En las operaciones de flete, los costos se producen a diferentes niveles estructurales. Un cargo por despacho de aduanas o un cargo de documentación del conocimiento de embarque se aplica una vez por **reserva**, mientras que los cargos de manipulación en terminal (THC), el drayage o los cargos de división de chasis se aplican por **contenedor (TEU/FEU)**. Aplanar estos en una sola tabla causa un grave doble recuento. Este motor impone una jerarquía relacional estricta: los costos directos de contenedor se vinculan a `Container_ID`, mientras que los gastos generales de todo el envío se vinculan a `Booking_ID` y se distribuyen dinámicamente mediante una fórmula determinista de asignación:
+   $$\text{Container Allocated Cost} = \text{Direct Container Cost} + \frac{\text{Booking-Level Shared Costs}}{\text{Total Active Containers in Booking}}$$
+2. **Estado de diagnóstico desacoplado vs. agregación numérica (arquitectura de fallo silencioso cero):**  
+   En las hojas de cálculo Excel estándar, un ID de reserva mal escrito en una fórmula `SUMIFS` ignora silenciosamente una factura de transportista marítimo de $2.000 — haciendo que un envío con pérdidas parezca salvajemente rentable. Por el contrario, un error `#N/A` en un `VLOOKUP` rompe todo el panel de cuenta de resultados. Este modelo utiliza un **método de evaluación de doble vía**: cada fila de transacción pasa por una puerta de integridad referencial (`Data_Health_Status`) que valida los ID de reserva, los códigos de servicio y las claves de moneda antes de la ejecución matemática. Las filas inválidas emiten cadenas de diagnóstico explícitas (`ERR: UNKNOWN_CURRENCY`, `ERR: ORPHAN_BOOKING`) mientras pasan un `0` seguro al motor de agregación, garantizando que el panel nunca se bloquee al tiempo que alerta visualmente a los analistas sobre datos de margen incompletos.
+3. **Triangulación multimoneda centralizada:**  
+   El transporte transfronterizo implica pagar a los agentes de origen en CNY/EUR, liquidar el flete marítimo en USD y absorber las comisiones bancarias de transferencia intermedias. El modelo normaliza cada fila de transacción sin procesar a nivel de partida ($T_i \times \text{FX}_{\text{rate}}$) antes del resumen ascendente de la cuenta de resultados, eliminando las distorsiones de redondeo y la deriva del tipo de cambio comunes en las conversiones manuales de resumen.
+4. **Separación de la cuenta de resultados de flujo de caja vs. devengado (depósitos vs. ingresos ganados):**  
+   Los transitarios suelen cobrar depósitos anticipados de clientes o anticipos de derechos de aduana antes de que un buque zarpe. Mezclar los depósitos de clientes con los ingresos de flete ganados distorsiona el margen bruto real. El motor de clasificación de transacciones aísla explícitamente los **depósitos de balance** de los **ingresos, el costo de ventas y las comisiones bancarias de la cuenta de resultados**, entregando una visión precisa del margen unitario junto con transparencia sobre la posición de caja.
+
+---
+
+## Por qué construí esto: arreglar la cadena analítica rota en el transporte de mercancías
+
+La rentabilidad del transporte de mercancías es mucho más difícil de ver de lo que parece en una cotización de venta.
+
+Una sola reserva oceánica o aérea puede implicar cargos de flete de clientes, inspección en origen, seguro de carga, cargos de documentación, drayage local, flete marítimo del transportista, comisiones bancarias por transferencias, depósitos de clientes, 3+ monedas y varios contenedores — dispersos por rastreadores operativos y exportaciones contables dispares.
+
+Cuando los transitarios pierden dinero en un envío, la causa rara vez es una mala intención de precios. **Es una cadena analítica rota:**
+- Un envío parece un **ganador con 38.8% de margen bruto** porque una factura de proveedor de drayage de $1,500 tenía un error de escritura en la referencia de la reserva y fue excluida de la fórmula `SUMIFS`.
+- Un cargo de agente de origen en moneda extranjera se omitió porque su tasa de divisas no se actualizó en la tabla de búsqueda.
+- Los costos compartidos de aduanas y documentación a nivel de reserva se multiplicaron accidentalmente entre 5 contenedores — o se ignoraron por completo — al cotizar al cliente las tarifas por contenedor.
+
+Por ejemplo, en lugar de confiar ciegamente en un resumen defectuoso como este:
 
 ```text
-Booking Revenue       $8,500
-Reported COGS         $5,200
-Apparent Profit       $3,300
-Margin                   38.8%
+Booking Revenue        $8,500
+Reported COGS          $5,200
+Apparent Net Profit    $3,300
+Reported Margin         38.8%  <-- (Artificially inflated by missing vendor bill)
 ```
 
-… el flujo de trabajo puede revelar que el conjunto de datos de transacciones contiene un costo de proveedor no vinculado y una moneda desconocida. La reserva se marca entonces en lugar de presentarse como un margen limpio del 38,8%.
+Este motor de cálculo de costos marca inmediatamente que el conjunto de datos de transacciones subyacente contiene un **costo de proveedor no vinculado** o una **moneda no configurada (`ERR: UNKNOWN_CURRENCY`)**. La reserva se pone visiblemente en cuarentena para la limpieza de datos, en lugar de presentarse a la dirección como un margen limpio del 38.8%.
 
-El objetivo no es un panel más. Es un **marco de razonamiento productizado** para convertir los datos de transporte a nivel de transacción en una visión de rentabilidad por reserva defendible.
+El objetivo no es otro panel bonito de vanidad. Es un **marco de razonamiento financiero defendible** que garantiza que su cuenta de resultados a nivel de reserva sea matemáticamente sólida antes de que pague comisiones de ventas o renueve las tarjetas de precios de los clientes.
 
-La implementación separa explícitamente los campos de cálculo numérico del texto de diagnóstico. Un tipo de cambio ausente puede por tanto permanecer numéricamente seguro para la agregación y producir simultáneamente una advertencia `ERR: UNKNOWN_CURRENCY`. Esto impide que un estado de error se convierta en un resultado financiero aparentemente válido. 
+---
 
-## Problemas comunes del transporte de mercancías que esto resuelve
+## Hojas de cálculo contables ad-hoc vs. este motor de cálculo de costos de fletes
 
-| Problema                                        | Sin esta herramienta                                                                                                  | Con esta herramienta                                                                                                    |
-| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| **El beneficio solo es visible en agregado**        | Los ingresos y gastos a nivel de empresa ocultan qué envíos individuales ganan o pierden dinero.                          | Cada reserva recibe su propia vista de ingresos, costo de ventas, comisiones bancarias, beneficio neto y margen.                              |
-| **Los costos llegan en varias monedas**        | La conversión de monedas se realiza manualmente o de forma inconsistente, lo que hace poco fiable la comparación entre reservas.                 | Las transacciones usan una búsqueda de monedas controlada con una excepción explícita por tipo ausente.                                  |
-| **Una reserva contiene varios contenedores**     | Los costos compartidos pueden duplicarse, ignorarse o asignarse de forma inconsistente al analizar la economía de los contenedores.            | Los costos compartidos a nivel de reserva pueden asignarse sobre el número de contenedores según una política definida.                    |
-| **La rentabilidad por servicio no está clara**           | Los ingresos pueden conocerse por cargo, pero el costo y el margen correspondientes son difíciles de conciliar entre envíos. | La agregación a nivel de servicio expone la rentabilidad a través de las reservas.                                                  |
-| **Vínculos de datos maestros defectuosos distorsionan la cuenta de resultados en silencio** | Los identificadores de reserva, códigos de servicio o monedas inválidos pueden convertirse en costos ausentes o valores cero engañosos.              | `Data Health Status` identifica las cadenas de búsqueda rotas y el motor de cálculo solo agrega las transacciones sanas. |
+| Dimensión de evaluación | Hojas de cálculo manuales y contabilidad genérica (sin esta herramienta) | Motor estandarizado de cálculo de costos de fletes (con esta herramienta) |
+| --- | --- | --- |
+| **Visibilidad a nivel de envío (B/L y AWB)** | El software de libro mayor mezcla todas las facturas mensuales, ocultando qué envíos, rutas comerciales o clientes específicos pierden dinero. | Genera una **cuenta de resultados reserva por reserva** instantánea que desglosa los ingresos brutos, el costo de ventas directo, las comisiones bancarias por transferencias, el beneficio neto y el margen %. |
+| **Conciliación multimoneda (FX)** | Los operarios convierten EUR, CNY, GBP y USD manualmente usando tasas ad-hoc, causando discrepancias de margen inexplicables en el cierre de mes. | Impone una **tabla de tasas de divisas centralizada** que convierte cada línea de factura a una sola moneda base, emitiendo una advertencia explícita si falta una tasa de moneda. |
+| **Asignación de costos FCL con varios contenedores** | Los cargos de documentación, el despacho de aduanas y los recargos a nivel de reserva se cuentan dos veces por contenedor o se omiten de la economía unitaria de los contenedores. | Separa dinámicamente el **costo de ventas directo de contenedor** de los **costos compartidos de la reserva**, distribuyendo los cargos compartidos uniformemente entre el número exacto de contenedores. |
+| **Margen de cargos accesorios y códigos de servicio** | Los transitarios conocen el valor total de la factura pero no pueden decir si están perdiendo dinero en drayage, seguro de carga, inspección en origen o THD/THC. | Agrega ingresos vs. costo de proveedor por **código de servicio de flete granular**, revelando qué servicios de valor añadido generan beneficio vs. fuga de margen. |
+| **Integridad de datos maestros y manejo de errores** | Los ID de reserva mal escritos o las vinculaciones `VLOOKUP` defectuosas hacen que los costos de proveedor caigan silenciosamente a cero (inflando el beneficio) o rompan toda la hoja con errores `#N/A`. | La **capa de diagnóstico de integridad de datos** integrada aísla los ID de reserva, códigos de servicio y tasas de divisas inválidos y mantiene las agregaciones numéricas estables y listas para auditoría. |
 
-## Para quién es esta herramienta
+---
 
-Esta herramienta está diseñada para **transitarios pequeños y medianos, operadores de transporte, equipos financieros, analistas de cálculo de costos y propietarios** que necesitan entender la rentabilidad a nivel de reserva o de envío, en lugar de basarse en una cuenta de resultados general de toda la empresa.
+## Para quién es esto: roles logísticos objetivo y escenarios operativos
 
-Encaja en operaciones donde los registros de ingresos y costos ya existen en hojas de cálculo o exportaciones contables, pero el negocio necesita una manera estructurada de conectarlos.
+Este kit de herramientas está diseñado para **transitarios pequeños y medianos (OTI / NVOCC), agentes de aduanas, operadores 3PL y equipos financieros de logística** que necesitan un cálculo de costos de envíos de calidad empresarial sin pagar $20,000+ por una implementación pesada de TMS/ERP:
 
-Es especialmente útil cuando una misma reserva puede contener varios servicios, proveedores, monedas, cargos bancarios y contenedores.
+* **Propietarios y directores generales de transitarios:** Use esto como una **herramienta de auditoría de rentabilidad de envíos y comisiones de ventas a nivel directivo** para verificar los márgenes netos reales (después de comisiones bancarias y costos compartidos) antes de firmar contratos anuales de precios con cargadores o pagar comisiones a representantes de ventas.
+* **Gerentes financieros de logística y contadores de fletes:** Use esto como una **plantilla mensual de conciliación de cálculo de costos** para cerrar la brecha entre el software contable general (QuickBooks, Xero, NetSuite) y los archivos operativos de envíos — detectando ingresos no facturados o facturas de proveedor huérfanas antes de cerrar los libros.
+* **Analistas de precios de flete y gerentes de rutas comerciales:** Use esto como un **analizador de economía unitaria de contenedores y margen de cargos accesorios** para ver si el transporte marítimo, el transporte aéreo, el despacho de aduanas, el seguro de carga o el drayage terrestre impulsan o erosionan la rentabilidad en rutas comerciales específicas.
+* **Gerentes de operaciones de transporte y despachadores:** Use esto como una **calculadora de asignación de costos con varios contenedores FCL/LCL** al gestionar carga de proyecto compleja o reservas con varios contenedores con monedas mixtas y facturas de proveedor divididas.
+* **CFO a tiempo parcial y consultores de cadena de suministro:** Use esto como un **marco de diagnóstico de fuga de margen listo para usar** al auditar carteras de fletes de clientes o limpiar hojas de cálculo operativas desordenadas.
 
-**No** está destinada a reemplazar un TMS, un ERP, una plataforma contable o un sistema transaccional de alta concurrencia. Es una capa de ejecución analítica ligera.
+*Nota: este libro de trabajo **no** está destinado a reemplazar un TMS operativo (como CargoWise), una plataforma de reservas EDI automatizada o un sistema contable fiscal obligatorio. Es la ligera **capa de ejecución analítica de cálculo de costos** que conecta sus registros operativos de envíos con su verdadero resultado financiero.*
 
-**No se necesita experiencia en hojas de cálculo para usar la versión de navegador. Ábrala y comience a inspeccionar el flujo de trabajo de inmediato.**
+---
 
-## Acerca de
+## Preguntas frecuentes sobre cálculo de costos de fletes y escenarios de margen
 
-Construyo rastreadores ligeros y herramientas de apoyo a la decisión para situaciones en las que hay demasiadas piezas en movimiento para tenerlas en una sola cabeza, pero no la suficiente complejidad para justificar una implementación empresarial completa.
+Si su operación de transporte lucha con alguna de las siguientes preguntas de conciliación financiera, este modelo está estructurado para resolverlas de fábrica:
 
-La pregunta central es simple:
+* **Prevención de la fuga de margen en envíos:** *¿Cómo concilio las facturas de clientes (AR) contra las cuentas retrasadas de transportistas marítimos, drayage y agentes de aduanas (AP) a nivel de reserva individual o conocimiento de embarque (B/L)?*
+* **División de costos con varios contenedores FCL:** *¿Cómo calculo con precisión el costo y el beneficio por contenedor cuando una sola reserva incluye contenedores 4x 40'HC con tanto cargos de drayage específicos del contenedor como cargos compartidos de documentación B/L?*
+* **Contabilidad de fletes en varias monedas en Excel:** *¿Cómo construyo un rastreador de cuenta de resultados de envíos en Excel que maneje flete marítimo en USD, cargos de origen en EUR/CNY y comisiones bancarias por transferencias sin errores manuales de conversión de divisas?*
+* **Auditoría del beneficio bruto de representantes de ventas:** *¿Cómo verifico el margen neto real de una reserva de flete antes de pagar comisiones de ventas sobre el beneficio bruto?*
 
-> **¿Qué información necesita estar en un solo lugar para tomar la próxima decisión con confianza?**
+---
 
-Este cálculo de costos por reserva aplica ese enfoque al transporte de mercancías. En lugar de tratar la rentabilidad como un informe contable final, conecta la unidad operativa — la **reserva** — con sus transacciones, servicios, contenedores, costos y resultado financiero.
+## Acerca de Theseus Workshop
+
+Construyo marcos ligeros de apoyo a la decisión en Excel y basados en navegador, listos para auditoría, para entornos operativos donde hay demasiadas piezas en movimiento para tenerlas en una sola cabeza — pero donde un despliegue inflado de software empresarial sería excesivo.
+
+La pregunta de diseño central detrás de cada herramienta es simple:
+
+> **"¿Qué datos operativos y financieros exactos necesitan estar en un solo lugar para que la próxima decisión de negocio sea matemáticamente obvia?"**
+
+Este **motor de rentabilidad y cálculo de costos a nivel de reserva** aplica ese principio al transporte internacional de mercancías — conectando la unidad operativa central (**la reserva y el contenedor**) directamente con sus transacciones en varias monedas, líneas de servicio accesorias, estado de integridad de datos y beneficio final real.
+
+---
+
+*Keywords: Plantilla de Excel de cálculo de costos para transitarios, calculadora de rentabilidad de envíos, hoja de cálculo de cuenta de resultados a nivel de reserva, rastreador de margen NVOCC, modelo de asignación de costos de contenedores FCL, plantilla de conciliación de contabilidad de fletes AR/AP, análisis de margen bruto logístico.*
+
 
 ## Detalles técnicos
 
@@ -159,15 +227,15 @@ La regla de diseño crítica es que **los valores de cálculo y los estados de d
 
 ### Tres trampas que atrapan incluso a operadores de transporte experimentados
 
-#### Trampa 1 — Tratar un tipo de cambio ausente como un importe válido
+#### Trampa 1 — Tratar una tasa de cambio ausente como un importe válido
 
 **1. Decisión:** Una reserva parece tener un determinado costo y margen.
 
-**2. Defecto oculto:** Una transacción de proveedor está denominada en una moneda que no está configurada en la tabla de tipos de cambio de referencia.
+**2. Defecto oculto:** Una transacción de proveedor está denominada en una moneda que no está configurada en la tabla de tasas de cambio de referencia.
 
-**3. Impacto de la decisión:** Si el tipo ausente se trata incorrectamente como `1.0`, un importe extranjero como `50,000` puede convertirse en `$50,000 USD`, distorsionando radicalmente el resultado de la reserva.
+**3. Impacto de la decisión:** Si la tasa ausente se trata incorrectamente como `1.0`, un importe extranjero como `50,000` puede convertirse en `$50,000 USD`, distorsionando radicalmente el resultado de la reserva.
 
-**4. Por qué está mal:** Un tipo de cambio ausente es un fallo de integridad de datos, no un tipo de cambio económico.
+**4. Por qué está mal:** Una tasa de cambio ausente es un fallo de integridad de datos, no una tasa de cambio económica.
 
 **5. Enfoque correcto:** Devolver un valor numérico neutro de `0` para el campo de cálculo e informar por separado `ERR: UNKNOWN_CURRENCY`.
 
@@ -298,7 +366,7 @@ IF(
 Considere una reserva de transporte de mercancías con las siguientes transacciones válidas:
 
 | Partida                      | Tipo     | Importe original | Moneda | Equivalente en USD |
-| ------------------------- | -------- | -------------: | -------- | -------------: |
+| ------------------------- | -------- | --------------: | -------- | -------------: |
 | Factura de cliente          | Revenue  |           8,500 | USD      |         $8,500 |
 | Costo de proveedor de transporte marítimo | COGS     |           3,000 | USD      |         $3,000 |
 | Inspección en origen         | COGS     |             900 | USD      |           $900 |
@@ -331,11 +399,11 @@ Profit Margin
 
 El depósito reembolsable de `$500` se sigue por separado en lugar de tratarse como ingresos de explotación o costo de ventas.
 
-Suponga ahora que se introduce una transacción de proveedor adicional en una moneda no configurada. El sistema **no** añade silenciosamente la transacción al costo de ventas. Su tipo de cambio aplicado pasa a ser `0`, su cálculo en USD permanece numérico y el campo de diagnóstico informa `ERR: UNKNOWN_CURRENCY`. La reserva recibe una advertencia de integridad en lugar de presentarse como limpia.
+Suponga ahora que se introduce una transacción de proveedor adicional en una moneda no configurada. El sistema **no** añade silenciosamente la transacción al costo de ventas. Su tasa de cambio aplicada pasa a ser `0`, su cálculo en USD permanece numérico y el campo de diagnóstico informa `ERR: UNKNOWN_CURRENCY`. La reserva recibe una advertencia de integridad en lugar de presentarse como limpia.
 
 La recomendación operativa cambia en consecuencia:
 
-> **No use el margen del 55,34% como cifra de rentabilidad final hasta que se corrija la transacción sin resolver.**
+> **No use el margen del 55.34% como cifra de rentabilidad final hasta que se corrija la transacción sin resolver.**
 
 Esta es la distinción clave entre una calculadora de rentabilidad y un flujo de trabajo de cálculo de costos controlado: el resultado va acompañado de evidencia sobre si los datos subyacentes están lo suficientemente completos para confiar en ellos.
 
@@ -369,9 +437,9 @@ Si aún no se ha introducido ningún contenedor, el denominador cae en `1`. Esta
 </details>
 
 <details>
-<summary>Raw Transactions — Tipo de cambio aplicado</summary>
+<summary>Raw Transactions — Tasa de cambio aplicada</summary>
 
-**Propósito:** Dar prioridad a un tipo de cambio manual y, en caso contrario, recuperar el tipo de moneda configurado.
+**Propósito:** Dar prioridad a una tasa de cambio manual y, en caso contrario, recuperar la tasa de moneda configurada.
 
 ```excel
 =MAP(
@@ -456,7 +524,7 @@ Mantener esta columna numérica es importante porque los cálculos `SUMIFS` post
 <details>
 <summary>Raw Transactions — Estado de integridad de datos</summary>
 
-**Propósito:** Validar el vínculo de reserva, servicio y tipo de cambio de forma independiente de las columnas de cálculo financiero.
+**Propósito:** Validar el vínculo de reserva, servicio y tasa de cambio de forma independiente de las columnas de cálculo financiero.
 
 ```excel
 =MAP(
@@ -598,14 +666,14 @@ La validación cruzada de origen confirma la cobertura de las entradas básicas 
 
 La arquitectura del libro de trabajo está diseñada para validar la cadena analítica **antes** de que la dirección confíe en la cuenta de resultados resultante.
 
-La implementación de origen comprueba explícitamente la cadena de correspondencia de tipos de transacción, la cadena de búsqueda de tipos de cambio, el vínculo con Service Master, la cadena de asignación de costos compartidos y la compatibilidad entre el texto de diagnóstico y los campos de agregación numéricos. 
+La implementación de origen comprueba explícitamente la cadena de correspondencia de tipos de transacción, la cadena de búsqueda de tasas de cambio, el vínculo con Service Master, la cadena de asignación de costos compartidos y la compatibilidad entre el texto de diagnóstico y los campos de agregación numéricos. 
 
 | Dimensión de validación         | Qué se comprueba                                                                  | Resultado esperado                                          |
 | ---------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------- |
 | **Vínculo de reserva**          | Cada `Booking ID` de transacción existe en `Booking_Master`                        | Las filas inválidas reciben un estado de error                      |
 | **Vínculo de servicio**          | Cada `Service Code` de transacción existe en `Service_Master`                      | Las filas inválidas se excluyen de la cuenta de resultados                       |
 | **Cobertura de tipos de cambio**              | Cada transacción tiene un tipo de cambio manual válido o un tipo de referencia configurado | Las monedas desconocidas disparan una advertencia de integridad              |
-| **Clasificación financiera** | El tipo de transacción se vincula a Revenue / COGS / Bank Fee / Deposit                     | Los tipos desconocados usan la alternativa conservadora COGS         |
+| **Clasificación financiera** | El tipo de transacción se vincula a Revenue / COGS / Bank Fee / Deposit                     | Los tipos desconocidos usan la alternativa conservadora COGS         |
 | **Agregación numérica**      | `USD Equivalent` permanece numérico en todas las condiciones                                    | `SUMIFS` no encuentra texto de diagnóstico              |
 | **Agregación condicionada por integridad** | La cuenta de resultados solo incluye `Data Health Status = "OK"`                                    | Las filas de origen defectuosas no pueden entrar silenciosamente en el beneficio declarado |
 | **Asignación de contenedores**     | Los costos compartidos a nivel de reserva usan la política de asignación configurada                  | Ninguna asignación repetida del costo completo entre contenedores       |
@@ -638,7 +706,7 @@ Cree la reserva en `Booking_Master`.
 
 Si los contenedores son relevantes, cree sus relaciones reserva-contenedor en `Container_Master`.
 
-Mantenga el catálogo de servicios estandarizado en `Service_Master`.
+Mantenga el catálogo de servicios estandarizado en `Service_Master`. 
 
 No comience el análisis financiero tecleando nombres de servicio libres ni identificadores de reserva directamente en las hojas de informes. Las tablas maestras son la capa de referencia para las cadenas de búsqueda posteriores. 
 
@@ -793,7 +861,7 @@ Compruebe tres cosas por orden:
 
 Bajo `EQUAL_SHARE`, el costo de ventas compartido a nivel de reserva se divide entre el número de contenedores de la reserva antes de sumarse a los costos directos de los contenedores.
 
-Bajo `NO_ALLOCATE`, los costos compartidos a nivel de reserva no se asignan a contenedores individuales.
+Bajo `NO_ALLOCATE`, los costos compartidos a nivel de reserva no se asignan a contenedores individuales. 
 
 La distinción importa porque asignar el costo compartido completo a nivel de reserva a cada contenedor duplicaría el mismo costo económico. 
 
@@ -962,7 +1030,7 @@ El principio de diseño central no es la mera automatización. Es **impedir que 
 | Ingresos cero                                         | El cálculo del margen devuelve `0` en lugar de `#DIV/0!`                            |
 | Texto de diagnóstico que contamina los cálculos financieros | Las columnas de cálculo numérico y las columnas de diagnóstico permanecen separadas             |
 
-La matriz de alternativas de la implementación rechaza específicamente una alternativa de tipo `1.0` porque eso podría convertir un importe no reconocido en moneda extranjera en un importe en USD implausiblemente grande. 
+La matriz de alternativas de la implementación rechaza específicamente una alternativa de tasa `1.0` porque eso podría convertir un importe no reconocido en moneda extranjera en un importe en USD implausiblemente grande. 
 
 ### Patrón de uso recomendado
 
