@@ -12,7 +12,7 @@
 
 استخدم تطبيق الويب التفاعلي لفحص سير عمل حساب تكلفة المهام فوراً، أو نزّل قالب جدول بيانات Excel الكامل لاستيراد صادراتك المحاسبية الخاصة—مدعوماً بضمان استرداد الأموال خلال 30 يوماً دون أسئلة.
 
-> 🌐 **افتح تطبيق الويب المجاني** → [حاسبة ويب تفاعلية لحساب تكلفة مهام وكلاء الشحن وقائمة أرباح وخسائر الشحنات](https://hyvoid.github.io/Booking-Level-Profitability-Job-Costing-Engine-for-Freight-Forwarders/)  
+> 🌐 **افتح تطبيق الويب المجاني** → [حاسبة ويب تفاعلية لحساب تكلفة مهام وكلاء الشحن وقائمة أرباح وخسائر الشحنات](https://hyvoid.github.io/freight-forwarder-job-costing-excel/)  
 > 📥 **احصل على نموذج Excel الكامل** → [نزّل قالب Excel القابل للتحرير لحساب تكلفة مهام وكلاء الشحن وربحية الحجز](https://www.theseusworkshop.com/l/uyukd?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=freight-booking-job-costing)  
 >
 > *تتشارك النسخة المتصفحية ومصنف Excel القابل للتنزيل نفس البنية المحاسبية العلائقية تماماً.*
@@ -43,7 +43,7 @@
 - اربط **أنواع المعاملات** (إيرادات العملاء، تكلفة المبيعات المباشرة، الرسوم المصرفية/التحويلات، ودائع العملاء).
 - اختر **سياسة توزيع التكاليف المشتركة** لشحنات FCL متعددة الحاويات.
 
-*إجراء:* افحص بنية المعاملات المُهيّأة مسبقاً فوراً في [عرض المتصفح المجاني لحساب تكلفة المهام](https://hyvoid.github.io/Booking-Level-Profitability-Job-Costing-Engine-for-Freight-Forwarders/).
+*إجراء:* افحص بنية المعاملات المُهيّأة مسبقاً فوراً في [عرض المتصفح المجاني لحساب تكلفة المهام](https://hyvoid.github.io/freight-forwarder-job-costing-excel/).
 
 ---
 
