@@ -12,7 +12,7 @@
 
 Nutzen Sie die interaktive Webanwendung, um den Kostenzuordnungs-Ablauf sofort zu prüfen, oder laden Sie die vollständige Excel-Tabellenvorlage herunter, um Ihre eigenen Buchhaltungsexporte zu importieren — abgesichert durch eine 30-tägige Geld-zurück-Garantie ohne Rückfragen.
 
-> 🌐 **Kostenlose Web-App starten** → [Interaktiver Kostenzuordnungs- und Sendungs-GuV-Rechner für Speditionen](https://hyvoid.github.io/Booking-Level-Profitability-Job-Costing-Engine-for-Freight-Forwarders/)  
+> 🌐 **Kostenlose Web-App starten** → [Interaktiver Kostenzuordnungs- und Sendungs-GuV-Rechner für Speditionen](https://hyvoid.github.io/freight-forwarder-job-costing-excel/)  
 > 📥 **Vollständiges Excel-Modell holen** → [Bearbeitbare Excel-Vorlage zur Kostenzuordnung und Buchungsprofitabilität für Speditionen herunterladen](https://www.theseusworkshop.com/l/uyukd?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=freight-booking-job-costing)  
 >
 > *Sowohl die Browserversion als auch das herunterladbare Excel-Arbeitsbuch teilen exakt dieselbe relationale Buchhaltungsarchitektur.*
@@ -43,7 +43,7 @@ Verwandeln Sie unaufgeräumte ERP-/Buchhaltungsexporte, Frachtführerrechnungen 
 - Ordnen Sie Ihre **Transaktionstypen** zu (Kundenumsatz, direkte Umsatzkosten, Bank-/Überweisungsgebühren, Kundeneinlagen).
 - Wählen Sie Ihre **Richtlinie zur Zuteilung gemeinsamer Kosten** für FCL-Sendungen mit mehreren Containern.
 
-*Aktion:* Prüfen Sie die vorkonfigurierte Parameterstruktur sofort in der [kostenlosen Browser-Demo zur Kostenzuordnung](https://hyvoid.github.io/Booking-Level-Profitability-Job-Costing-Engine-for-Freight-Forwarders/).
+*Aktion:* Prüfen Sie die vorkonfigurierte Parameterstruktur sofort in der [kostenlosen Browser-Demo zur Kostenzuordnung](https://hyvoid.github.io/freight-forwarder-job-costing-excel/).
 
 ---
 
