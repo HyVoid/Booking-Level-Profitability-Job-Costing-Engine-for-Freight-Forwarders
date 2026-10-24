@@ -12,7 +12,7 @@
 
 Use la aplicación web interactiva para inspeccionar inmediatamente el flujo de trabajo de cálculo de costos, o descargue la plantilla completa de hoja de cálculo Excel para importar sus propias exportaciones contables — respaldada por una garantía de devolución de 30 días sin preguntas.
 
-> 🌐 **Iniciar la aplicación web gratuita** → [Calculadora web interactiva de cálculo de costos y cuenta de resultados de envíos para transitarios](https://hyvoid.github.io/Booking-Level-Profitability-Job-Costing-Engine-for-Freight-Forwarders/)  
+> 🌐 **Iniciar la aplicación web gratuita** → [Calculadora web interactiva de cálculo de costos y cuenta de resultados de envíos para transitarios](https://hyvoid.github.io/freight-forwarder-job-costing-excel/)  
 > 📥 **Obtener el modelo completo de Excel** → [Descargar la plantilla de Excel editable de cálculo de costos y rentabilidad de reservas para transitarios](https://www.theseusworkshop.com/l/uyukd?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=freight-booking-job-costing)  
 >
 > *Tanto la versión de navegador como el libro de Excel descargable comparten exactamente la misma arquitectura contable relacional.*
@@ -43,7 +43,7 @@ Abra la hoja de control `Setup_Params` para establecer su línea base de contabi
 - Asigne sus **tipos de transacción** (ingresos de clientes, costo de ventas directo, comisiones bancarias/de transferencia, depósitos de clientes).
 - Seleccione su **política de asignación de costos compartidos** para envíos FCL con varios contenedores.
 
-*Acción:* Inspeccione la estructura de parámetros preconfigurada al instante en la [demo de navegador gratuita de cálculo de costos](https://hyvoid.github.io/Booking-Level-Profitability-Job-Costing-Engine-for-Freight-Forwarders/).
+*Acción:* Inspeccione la estructura de parámetros preconfigurada al instante en la [demo de navegador gratuita de cálculo de costos](https://hyvoid.github.io/freight-forwarder-job-costing-excel/).
 
 ---
 
