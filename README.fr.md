@@ -12,7 +12,7 @@
 
 Utilisez l'application web interactive pour examiner immédiatement le flux de travail de calcul des coûts par expédition, ou téléchargez le modèle de classeur Excel complet pour importer vos propres exports comptables—avec une garantie de remboursement de 30 jours, sans question.
 
-> 🌐 **Lancer l'application web gratuite** → [Calculateur web interactif de calcul des coûts par expédition et de compte de résultat des envois pour transitaires](https://hyvoid.github.io/Booking-Level-Profitability-Job-Costing-Engine-for-Freight-Forwarders/)  
+> 🌐 **Lancer l'application web gratuite** → [Calculateur web interactif de calcul des coûts par expédition et de compte de résultat des envois pour transitaires](https://hyvoid.github.io/freight-forwarder-job-costing-excel/)  
 > 📥 **Obtenir le modèle Excel complet** → [Télécharger le modèle Excel de calcul des coûts par expédition et de rentabilité des envois éditable pour transitaires](https://www.theseusworkshop.com/l/uyukd?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=freight-booking-job-costing)  
 >
 > *L'édition navigateur et le classeur Excel téléchargeable partagent exactement la même architecture comptable relationnelle.*
@@ -43,7 +43,7 @@ Ouvrez la feuille de contrôle `Setup_Params` pour établir votre référence co
 - Cartographiez vos **types de transaction** (revenus client, coût des ventes direct, frais bancaires/virements, dépôts client).
 - Sélectionnez votre **politique d'allocation des coûts partagés** pour les envois FCL multi-conteneurs.
 
-*Action :* Inspectez instantanément la structure de paramètres préconfigurée dans la [démo navigateur gratuite de calcul des coûts par expédition](https://hyvoid.github.io/Booking-Level-Profitability-Job-Costing-Engine-for-Freight-Forwarders/).
+*Action :* Inspectez instantanément la structure de paramètres préconfigurée dans la [démo navigateur gratuite de calcul des coûts par expédition](https://hyvoid.github.io/freight-forwarder-job-costing-excel/).
 
 ---
 
