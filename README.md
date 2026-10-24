@@ -12,7 +12,7 @@
 
 Use the interactive web application to inspect the job-costing workflow immediately, or download the full Excel spreadsheet template to import your own accounting exports—backed by a 30-day, no-questions-asked money-back guarantee.
 
-> 🌐 **Launch Free Web App** → [Interactive Freight Forwarding Job Costing & Shipment P&L Web Calculator](https://hyvoid.github.io/Booking-Level-Profitability-Job-Costing-Engine-for-Freight-Forwarders/)  
+> 🌐 **Launch Free Web App** → [Interactive Freight Forwarding Job Costing & Shipment P&L Web Calculator](https://hyvoid.github.io/freight-forwarder-job-costing-excel/)  
 > 📥 **Get the Full Excel Model** → [Download the Editable Freight Forwarder Job Costing & Booking Profitability Excel Template](https://www.theseusworkshop.com/l/uyukd?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=freight-booking-job-costing)  
 >
 > *Both the browser edition and the downloadable Excel workbook share the exact same relational accounting architecture.*
@@ -43,7 +43,7 @@ Open the `Setup_Params` control sheet to establish your freight accounting basel
 - Map your **Transaction Types** (Customer Revenue, Direct COGS, Bank/Wire Fees, Customer Deposits).
 - Select your **Shared-Cost Allocation Policy** for multi-container FCL shipments.
 
-*Action:* Inspect the pre-configured parameter structure instantly in the [Free Browser Job Costing Demo](https://hyvoid.github.io/Booking-Level-Profitability-Job-Costing-Engine-for-Freight-Forwarders/).
+*Action:* Inspect the pre-configured parameter structure instantly in the [Free Browser Job Costing Demo](https://hyvoid.github.io/freight-forwarder-job-costing-excel/).
 
 ---
 
